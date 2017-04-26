@@ -1,10 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Bitter');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Bitter|Kalam:400,700');
 @import "theme-constants.scss";
 
 body {
   font-family: $base-font;
   color: $base-foreground;
   font-size: $font-size-base;
+}
+
+.page-title {
+  font-family: $title-font;
+  font-weight: $title-font-weight;
+  font-size: $font-size-page-title;
+}
+.page-subtitle {
+  font-family: $title-font;
+  font-weight: $title-font-weight;
+  font-size: $font-size-page-subtitle;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {

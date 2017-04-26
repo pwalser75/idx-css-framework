@@ -1,0 +1,134 @@
+@import "theme-constants.scss";
+
+.header {
+  background: $nav-dark-background;
+  box-shadow: 0 0 4px 4px $shadow-color;
+
+  nav {
+    margin:0;
+  }
+}
+
+.header .navbar {
+  background: none;
+}
+
+.navbar-bright {
+  color: $nav-bright-foreground;
+  > * {
+    background-color: $nav-bright-background;
+  }
+  a, a:active, a:visited, a:hover {
+    color: $nav-bright-foreground;
+  }
+  > a:hover, > div:hover {
+    background-color: $nav-bright-background-hover;
+  }
+}
+
+.navbar-dark {
+  color: $nav-dark-foreground;
+  > * {
+    background-color: $nav-dark-background;
+  }
+  a, a:active, a:visited, a:hover {
+    color: $nav-dark-foreground;
+  }
+  > a:hover, > div:hover {
+    background-color: $nav-dark-background-hover;
+  }
+}
+
+.navbar-border {
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+
+  margin: 0 0 $spacing-base 0;
+  padding: 0;
+
+  .pull {
+    display: inline;
+    flex: 1 1 auto;
+  }
+  .pull:hover {
+    cursor: default;
+  }
+
+  > * {
+    padding: $inset-small;
+    display: inline-block;
+    flex: 0 0 auto;
+    position: relative;
+    cursor: pointer;
+  }
+
+  a, a:active, a:visited {
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    background: $green; // $nav-popup-background;
+    color: $nav-popup-foreground;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: auto;
+    white-space: nowrap;
+    min-width: 160px;
+  }
+
+  .popup-right {
+    //default
+  }
+
+  ul ul {
+    top: 0;
+    left: 100%;
+  }
+
+  .popup-left {
+    ul {
+      left: auto;
+      right: 0;
+    }
+    ul ul {
+      top: 0;
+      right: 100%;
+    }
+  }
+
+  :hover > ul {
+    display: block;
+  }
+
+  ul li {
+    display: block;
+    padding: $inset-small;
+    background: $nav-popup-background;
+    color: $nav-popup-foreground;
+    position: relative;
+    border-bottom: 1px solid $nav-popup-divider-color;
+
+    a, a:active, a:visited, a:hover {
+      color: $nav-popup-foreground;
+    }
+  }
+
+  ul li:hover {
+    background: $nav-popup-background-hover;
+  }
+}

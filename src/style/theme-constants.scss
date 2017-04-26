@@ -8,10 +8,13 @@ $media-xl: 1200px; /* Large Devices, Wide Screens */
 // Fonts
 
 $base-font: 'Open Sans', sans-serif;
+$title-font: 'Kalam', sans-serif;
 $header-font: 'Bitter', sans-serif;
 $code-font: 'Consolas', monospace;
 
-$font-size-base: 13px;
+$title-font-weight: 700;
+
+$font-size-base: 14px;
 $font-size-large: 18em;
 $font-size-small: 11em;
 $font-size-h1: 36px;
@@ -20,11 +23,14 @@ $font-size-h3: 24px;
 $font-size-h4: 18px;
 $font-size-h5: 14px;
 $font-size-h6: 12px;
+$font-size-page-title: 60px;
+$font-size-page-subtitle: 40px;
 
 // Colors
 
-$base-foreground: #6a6c6f;
 $base-background: rgb(248, 249, 251);
+$base-foreground: #6a6c6f;
+$shadow-color: rgba(0,0,0,0.4);
 
 $primary: rgb(64, 81, 105);
 $blue: rgb(70, 130, 180);
@@ -70,5 +76,24 @@ $grid-column-spacing: 10px;
 // cards
 $card-background: lighten($base-background, 20%);
 $card-border-radius: 3px;
-$card-color-border-size: 2px;
+$card-color-border-size: 3px;
 
+// list
+$list-item-background: #FFFFFF;
+$list-item-background-hover: #DDDDDD;
+$list-item-foreground: $base-foreground;
+$list-item-divider-color: #DDDDDD;
+
+// nav
+$nav-bright-background: #EEEEEE;
+$nav-bright-background-hover: #CCCCCC;
+$nav-bright-foreground: #666666;
+
+$nav-dark-background: #3c424c;
+$nav-dark-background-hover: darken($nav-dark-background, 10%);
+$nav-dark-foreground: #FFFFFF;
+
+$nav-popup-background: $list-item-background;
+$nav-popup-background-hover: darken($nav-popup-background, 5%);
+$nav-popup-foreground: $list-item-foreground;
+$nav-popup-divider-color: $list-item-divider-color;

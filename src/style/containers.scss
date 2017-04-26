@@ -1,15 +1,25 @@
 @import "theme-constants.scss";
 
 .container {
-	margin: 0;
+  margin: 0;
+}
+
+.content-wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: $media-lg;
+  padding: 0 $inset-base;
+  max-width: $media-lg;
 }
 
 .inset-base {
-	padding: $inset-base;
+  padding: $inset-base;
 }
+
 .inset-small {
-	padding: $inset-small;
+  padding: $inset-small;
 }
+
 .inset-large {
-	padding: $inset-large;
+  padding: $inset-large;
 }

@@ -14,7 +14,6 @@ const cssConcat = require('gulp-concat-css');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
 const url = require('url');
-const proxy = require('proxy-middleware');
 
 // Configuration
 
@@ -25,8 +24,8 @@ const config = {
 		target: 'idx-style-min.css'
 	},
 	filetypes: {
-		stylesheet: ['css', 'scss'],
-		resources:  ['html','json','jpg','png','svg','woff','woff2']
+		stylesheet: ['scss'],
+		resources:  ['html','css','json','jpg','png','svg','woff','woff2']
 	}
 };
 
