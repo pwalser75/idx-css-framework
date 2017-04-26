@@ -1,0 +1,21 @@
+@import "theme-constants.scss";
+
+* {
+  min-width: 1px;
+  max-width: 100%;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $base-foreground;
+  background-color: $base-background;
+}
+
+.no-select, .no-select > * {
+  user-select: none;
+}

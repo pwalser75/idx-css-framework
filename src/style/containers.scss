@@ -1,0 +1,15 @@
+@import "theme-constants.scss";
+
+.container {
+	margin: 0;
+}
+
+.inset-base {
+	padding: $inset-base;
+}
+.inset-small {
+	padding: $inset-small;
+}
+.inset-large {
+	padding: $inset-large;
+}
