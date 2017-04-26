@@ -62,9 +62,9 @@ $red-light: lighten($red, 20%);
 
 // metrics
 
-$spacing-base: 20px;
-$spacing-small: 10px;
-$spacing-large: 30px;
+$spacing-base: 15px;
+$spacing-small: ceil($spacing-base / 1.4142);
+$spacing-large: ceil($spacing-base * 1.4142);
 
 $inset-base: $spacing-base;
 $inset-small: $spacing-small;
