@@ -1,6 +1,10 @@
+// general
+
+$scale-ratio: 1.6168;
+
 // Media break points
-$media-xs: 320px;  /* Custom, iPhone Retina */
-$media-sm: 480px;  /* Extra Small Devices, Phones */
+$media-xs: 320px; /* Custom, iPhone Retina */
+$media-sm: 480px; /* Extra Small Devices, Phones */
 $media-md: 768px; /* Small Devices, Tablets */
 $media-lg: 992px; /* Medium Devices, Desktops */
 $media-xl: 1200px; /* Large Devices, Wide Screens */
@@ -15,8 +19,8 @@ $code-font: 'Consolas', monospace;
 $title-font-weight: 700;
 
 $font-size-base: 14px;
-$font-size-large: 18em;
-$font-size-small: 11em;
+$font-size-large: ceil($font-size-base * 2);
+$font-size-small: ceil($font-size-base * 0.8);
 $font-size-h1: 36px;
 $font-size-h2: 30px;
 $font-size-h3: 24px;
@@ -30,7 +34,7 @@ $font-size-page-subtitle: 40px;
 
 $base-background: rgb(248, 249, 251);
 $base-foreground: #6a6c6f;
-$shadow-color: rgba(0,0,0,0.4);
+$shadow-color: rgba(0, 0, 0, 0.4);
 
 $primary: rgb(64, 81, 105);
 $blue: rgb(70, 130, 180);
@@ -38,6 +42,15 @@ $green: rgb(150, 190, 10);
 $yellow: rgb(252, 217, 23);
 $orange: rgb(251, 164, 0);
 $red: rgb(220, 90, 50);
+
+$colors: (
+        primary: $primary,
+        blue: $blue,
+        green: $green,
+        yellow: $yellow,
+        orange: $orange,
+        red: $red
+);
 
 $info: $blue;
 $success: $green;
@@ -62,16 +75,23 @@ $red-light: lighten($red, 20%);
 
 // metrics
 
-$spacing-base: 15px;
-$spacing-small: ceil($spacing-base / 1.4142);
-$spacing-large: ceil($spacing-base * 1.4142);
+$spacing-base: $font-size-base;
+$spacing-small: ceil($spacing-base / $scale-ratio);
+$spacing-tiny: ceil($spacing-small / $scale-ratio);
+$spacing-large: ceil($spacing-base * $scale-ratio);
 
 $inset-base: $spacing-base;
 $inset-small: $spacing-small;
 $inset-large: $spacing-large;
+$inset-tiny: $spacing-tiny;
 
 // grid
-$grid-column-spacing: 10px;
+$grid-column-spacing: $spacing-small;
+
+// panels
+$panel-background: #EEEEEE;
+$panel-foreground: #666666;
+$panel-background-hover: #DDDDDD;
 
 // cards
 $card-background: lighten($base-background, 20%);
@@ -85,9 +105,9 @@ $list-item-foreground: $base-foreground;
 $list-item-divider-color: #DDDDDD;
 
 // nav
-$nav-bright-background: #EEEEEE;
-$nav-bright-background-hover: #CCCCCC;
-$nav-bright-foreground: #666666;
+$nav-bright-background: $panel-background;
+$nav-bright-background-hover: $panel-background-hover;
+$nav-bright-foreground: $panel-foreground;
 
 $nav-dark-background: #3c424c;
 $nav-dark-background-hover: darken($nav-dark-background, 10%);

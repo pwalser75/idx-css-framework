@@ -63,7 +63,7 @@
   }
 
   > * {
-    padding: $inset-small;
+    padding: $inset-base;
     display: inline-block;
     flex: 0 0 auto;
     position: relative;
@@ -74,62 +74,5 @@
     font-weight: normal;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    top: 100%;
-    left: 0;
-    right: auto;
-    white-space: nowrap;
-    min-width: 160px;
-	box-shadow: 3px 3px 6px $shadow-color;
-  }
-
-  .popup-right {
-    //default
-  }
-
-  ul ul {
-    top: 0;
-    left: 100%;
-  }
-
-  .popup-left {
-    ul {
-      left: auto;
-      right: 0;
-    }
-    ul ul {
-      top: 0;
-      right: 100%;
-    }
-  }
-
-  :hover > ul {
-    display: block;
-  }
-
-  ul li {
-    display: block;
-    padding: $inset-small;
-    background: $nav-popup-background;
-    color: $nav-popup-foreground;
-    position: relative;
-    border-bottom: 1px solid $nav-popup-divider-color;
-	text-overflow: ellipsis;
-
-    a, a:active, a:visited, a:hover {
-      color: $nav-popup-foreground;
-    }
-  }
-
-  ul li:hover {
-    background: $nav-popup-background-hover;
   }
 }

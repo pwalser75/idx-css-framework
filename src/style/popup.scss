@@ -1,0 +1,113 @@
+@import "theme-constants.scss";
+
+.popup {
+
+  cursor: pointer;
+  position: relative;
+
+  > ul {
+    font-size: $font-size-base;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: auto;
+    white-space: nowrap;
+    min-width: 160px;
+    box-shadow: 3px 3px 6px $shadow-color;
+  }
+
+  > ul > li {
+    display: block;
+    padding: $inset-small;
+    background: $nav-popup-background;
+    color: $nav-popup-foreground;
+    position: relative;
+    border-bottom: 1px solid $nav-popup-divider-color;
+    text-overflow: ellipsis;
+
+    a, a:active, a:visited, a:hover {
+      color: $nav-popup-foreground;
+    }
+  }
+
+  ul li:hover {
+    background: $nav-popup-background-hover;
+  }
+}
+
+.popup:hover > ul {
+  display: block;
+}
+
+.popup-left-up {
+  > ul {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 100%;
+  }
+}
+
+.popup-left-down {
+  > ul {
+    top: 0;
+    left: auto;
+    right: 100%;
+  }
+}
+
+.popup-right-up {
+  > ul {
+    top: auto;
+    bottom: 0;
+    left: 100%;
+    right: auto;
+  }
+}
+
+.popup-right-down {
+  > ul {
+    top: 0;
+    left: 100%;
+    right: auto;
+  }
+}
+
+.popup-bottom-left {
+  > ul {
+    top: 100%;
+    left: auto;
+    right: 0;
+  }
+}
+
+.popup-bottom-right {
+  > ul {
+    top: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+.popup-top-left {
+  > ul {
+    top: auto;
+    bottom: 100%;
+    left: auto;
+    right: 0;
+  }
+}
+
+.popup-top-right {
+  > ul {
+    top: auto;
+    bottom: 100%;
+    left: 0;
+    right: auto;
+  }
+}

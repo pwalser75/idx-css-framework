@@ -18,6 +18,7 @@ const url = require('url');
 // Configuration
 
 const config = {
+	projectName: 'IDX CSS Framework',
 	source: './src',
 	target: './build',
 	css: {
@@ -43,12 +44,16 @@ gulp.task('compile-stylesheets', () => {
         })).on('error', sass.logError))
 		.pipe(cssPrefixer())
 		.pipe(cssConcat(config.css.target))
-		.pipe(gulp.dest(config.target));
+		.pipe(gulp.dest(config.target))
+		.pipe(browserSync.stream())
+		.pipe(notify({title: config.projectName, message: 'Updated stylesheets', onLast: true }));
 });
 
 gulp.task('copy-resources', () => {
 	return gulp.src(fileTypeMatcher(config.filetypes.resources))
-		.pipe(gulp.dest(config.target));
+		.pipe(gulp.dest(config.target))
+		.pipe(browserSync.stream())
+		.pipe(notify({title: config.projectName, message: 'Updated resources', onLast: true }));
 });
 
 // build targets
@@ -69,20 +74,8 @@ gulp.task('minify', () => {
 });
 
 gulp.task('watch', ['build'], () => {
-    var watchers = [
-		gulp.watch(fileTypeMatcher(config.filetypes.stylesheet), [ 'compile-stylesheets' ]),
-		gulp.watch(fileTypeMatcher(config.filetypes.resources), [ 'copy-resources' ])
-	];
-    var onChanged = function(event) {
-		var message='File ' + event.path + ' was ' + event.type + '. Running tasks...';
-		console.log(message);
-		notify(message);
-        browserSync.reload();
-	};
-
-	watchers.forEach(w => w.on('change', onChanged));
-	watchers.forEach(w => w.on('add', onChanged));
-	watchers.forEach(w => w.on('unlink', onChanged));
+	gulp.watch(fileTypeMatcher(config.filetypes.stylesheet), [ 'compile-stylesheets' ]);
+	gulp.watch(fileTypeMatcher(config.filetypes.resources), [ 'copy-resources' ]);
 });
 
 gulp.task('server', ['watch'], () => {

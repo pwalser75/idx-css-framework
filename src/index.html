@@ -25,7 +25,7 @@
             <div>
                 <a href="#"><i class="fa fa-home"></i> Home</a>
             </div>
-            <div>
+            <div class="popup popup-bottom-right">
                 <a href="#">?</a>
                 <ul>
                     <li>
@@ -40,7 +40,7 @@
                     <a href="#">About</a>
                 </form>
             </div>
-            <div class="popup-left">
+            <div class="popup popup-bottom-left">
                 <div>
                     <!--
                     <img src="images/user.png" height="20" alt="profile picture">
@@ -72,41 +72,127 @@
 <div class="content-wrapper">
 
     <div class="content">
+        <div class="container block inset-small card card-blue">
+            <h4>Popup demo</h4>
+
+            <div class="test popup">
+                Default
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li class="popup popup-right-down">
+                        Third
+                        <ul>
+                            <li>Fourth</li>
+                            <li>Fifth</li>
+                            <li class="popup popup-left-down">
+                                Sixth
+                                <ul>
+                                    <li>Seventh</li>
+                                    <li>Eight</li>
+                                </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-left-up">
+                Left Up
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-left-down">
+                Left Down
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-right-up">
+                Right Up
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-right-down">
+                Right Down
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-bottom-left">
+                Bottom Left
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-bottom-right">
+                Bottom Right
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-top-left">
+                Top Left
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+
+            <div class="test popup popup-top-right">
+                Top Right
+                <ul>
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                </ul>
+            </div>
+        </div>
 
         <nav class="navbar navbar-dark navbar-border">
-            <strong>Features</strong>
+            <strong>Navbar Dark</strong>
             <a href="#">Link1</a>
             <a href="#">Link2</a>
-            <a href="#">
+            <a href="#" class="popup">
                 Menu Left <i class="fa fa-caret-down"></i>
                 <ul>
                     <li>First</li>
                     <li>Second</li>
-                    <li>Third item (menu)
+                    <li class="popup popup-right-down">Third <i class="fa fa-caret-right"></i>
                         <ul>
                             <li>Fourth</li>
-                            <li>Fifth
-                                <ul>
-                                    <li>Sixth</li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </a>
             <span class="pull"></span>
-            <a href="#" class="popup-left">Menu Right <i class="fa fa-caret-down"></i>
+            <a href="#" class="popup popup-bottom-left">Menu Right <i class="fa fa-caret-down"></i>
                 <ul>
                     <li>First</li>
                     <li>Second</li>
-                    <li>Third item (menu)
+                    <li class="popup popup-left-down"><i class="fa fa-caret-left"></i> Third
                         <ul>
                             <li>Fourth</li>
-                            <li>Fifth
-                                <ul>
-                                    <li>Sixth</li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -114,39 +200,29 @@
         </nav>
 
         <nav class="navbar navbar-bright navbar-border">
-            <strong>Features</strong>
+            <strong>Navbar Bright</strong>
             <a href="#">Link1</a>
             <a href="#">Link2</a>
-            <a href="#">
+            <a href="#" class="popup">
                 Menu Left <i class="fa fa-caret-down"></i>
                 <ul>
                     <li>First</li>
                     <li>Second</li>
-                    <li>Third item (menu)
+                    <li class="popup popup-right-down">Third <i class="fa fa-caret-right"></i>
                         <ul>
                             <li>Fourth</li>
-                            <li>Fifth
-                                <ul>
-                                    <li>Sixth</li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
             </a>
             <span class="pull"></span>
-            <a href="#" class="popup-left">Menu Right <i class="fa fa-caret-down"></i>
+            <a href="#" class="popup popup-bottom-left">Menu Right <i class="fa fa-caret-down"></i>
                 <ul>
                     <li>First</li>
                     <li>Second</li>
-                    <li>Third item (menu)
+                    <li class="popup popup-left-down"><i class="fa fa-caret-left"></i> Third
                         <ul>
                             <li>Fourth</li>
-                            <li>Fifth
-                                <ul>
-                                    <li>Sixth</li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -154,52 +230,127 @@
         </nav>
 
         <div class="grid">
-            <div class="col-7">
+            <div class="col-8">
                 <div class="inset-small card">
-                    <header class="h3">Card</header>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <h3>Card</h3>
+                    Cards can contain content, and have optional headers and footers:
+                    <br>
+                    <br>
+
+                    <div class="grid">
+                        <div class="col-4">
+                            <div class="card">
+                                <header>Header</header>
+                                <section>
+                                    Here goes the content
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <section>
+                                    Here goes the content
+                                </section>
+                                <footer>Footer</footer>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <header>Header</header>
+                                <section>
+                                    Here goes the content
+                                </section>
+                                <footer>Footer</footer>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-4">
+                <div class="card card-primary">
+                    <header>Header</header>
+                    <section>
+                        Here goes the content
+                    </section>
+                    <footer>Footer</footer>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid">
             <div class="col-2">
                 <div class="inset-small card card-primary">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
             <div class="col-3">
                 <div class="inset-small card card-blue">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
             <div class="col-4">
                 <div class="inset-small card card-green">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
             <div class="col-3">
                 <div class="inset-small card card-yellow">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
             <div class="col-4">
                 <div class="inset-small card card-orange">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-5">
                 <div class="inset-small card card-red">
-                    <header class="h3">Card</header>
+                    <h3>Card</h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
             </div>
 
         </div>
 
-        <div class="container inset-small card card-blue">
+        <div class="grid content">
+            <div class="col-4">
+                <div class="card">
+                    <header>Headers</header>
+                    <section>
+                        <h1>Header 1</h1>
+                        <h2>Header 2</h2>
+                        <h3>Header 3</h3>
+                        <h4>Header 4</h4>
+                        <h5>Header 5</h5>
+                        <h6>Header 6</h6>
+                    </section>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <header>Lists</header>
+                    <section>
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ul>
+                        <ol>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis diam eget elit eleifend
             vehicula
             in

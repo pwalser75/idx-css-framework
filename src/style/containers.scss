@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+.block {
+  margin: $spacing-base 0;
+}
+
 .content-wrapper {
   display: block;
   margin: 0 auto;
