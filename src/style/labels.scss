@@ -9,7 +9,17 @@
     color: white;
     border-radius: 3px;
     padding: $inset-tiny;
+    margin-bottom: $inset-tiny;
     min-width: 2em;
     text-align: center;
+  }
+
+  .foreground-#{$name} {
+    color: #{$color};
+  }
+
+  .background-#{$name} {
+    color:white;
+    background-color: #{$color};
   }
 }
