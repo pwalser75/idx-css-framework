@@ -1,35 +1,56 @@
 @import "theme-constants.scss";
+@import "material.scss";
 
 .card {
+  @extend .material-shadow-1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
   border-radius: $card-border-radius;
   background: $card-background;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
   text-overflow: ellipsis;
-  transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
+
+  > section, .content {
+    flex: 1 1 auto;
+    padding: $inset-small;
+  }
 
   > header, > footer {
+    flex: 0 0 auto;
     font-size: $font-size-small;
-    background-color: $panel-background;
     padding: $inset-tiny $inset-small;
   }
 
   > header {
+    background-color: $card-header-background;
+    color: $card-header-foreground;
+    border-radius: $card-border-radius $card-border-radius 0 0;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  > section {
-    padding: $inset-small;
+  > footer {
+    background-color: $card-footer-background;
+    color: $card-footer-foreground;
+    border-radius: 0 0 $card-border-radius $card-border-radius;
   }
 }
 
 .card:hover {
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.4);
+  @extend .material-shadow-2;
 }
 
 @each $name, $color in $colors {
-  .card-#{$name}
-) {
-  border-top: $card-color-border-size solid #{$color};
-}
+  .card-#{$name} {
+    border-top: $card-color-border-size solid #{$color};
+  }
+
+  .card-#{$name} > header {
+    border-radius: 0;
+    background-color: #{$color};
+    color: white;
+  }
 }

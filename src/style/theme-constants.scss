@@ -1,6 +1,7 @@
 // general
 
-$scale-ratio: 1.6168;
+$golden-ratio: 1.61803398875;
+$sqrt2: 1.41421356237;
 
 // Media break points
 $media-xs: 320px; /* Custom, iPhone Retina */
@@ -8,8 +9,18 @@ $media-sm: 480px; /* Extra Small Devices, Phones */
 $media-md: 768px; /* Small Devices, Tablets */
 $media-lg: 992px; /* Medium Devices, Desktops */
 $media-xl: 1200px; /* Large Devices, Wide Screens */
+$media-xs-min: 0;
+$media-xs-max: $media-sm - 1;
+$media-sm-min: $media-sm;
+$media-sm-max: $media-md - 1;
+$media-md-min: $media-md;
+$media-md-max: $media-lg - 1;
+$media-lg-min: $media-lg;
+$media-lg-max: $media-xl - 1;
+$media-xl-min: $media-xl;
+$media-xl-max: 1000000000;
 
-// Fonts
+// Typography
 
 $base-font: 'Open Sans', sans-serif;
 $title-font: 'Kalam', sans-serif;
@@ -17,10 +28,13 @@ $header-font: 'Bitter', sans-serif;
 $code-font: 'Consolas', monospace;
 
 $title-font-weight: 700;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
 
 $font-size-base: 14px;
 $font-size-large: ceil($font-size-base * 2);
 $font-size-small: ceil($font-size-base * 0.8);
+$font-size-tiny: ceil($font-size-base * 0.7);
 $font-size-h1: 36px;
 $font-size-h2: 30px;
 $font-size-h3: 24px;
@@ -30,20 +44,26 @@ $font-size-h6: 12px;
 $font-size-page-title: 60px;
 $font-size-page-subtitle: 40px;
 
+$line-height: 1em * $sqrt2;
+
 // Colors
 
 $base-background: rgb(248, 249, 251);
 $base-foreground: #6a6c6f;
+$base-foreground-dark: darken($base-foreground, 10%);
+$base-foreground-light: lighten($base-foreground, 10%);
 $shadow-color: rgba(0, 0, 0, 0.4);
 
+$disabled: rgb(172,165,134);
 $primary: rgb(64, 81, 105);
 $blue: rgb(70, 130, 180);
 $green: rgb(150, 190, 10);
-$yellow: rgb(252, 217, 23);
-$orange: rgb(251, 164, 0);
-$red: rgb(220, 90, 50);
+$yellow: rgb(255,201,1);//(254,211,60);
+$orange: rgb(255,144,15);// rgb(251, 164, 0);
+$red: rgb(223,40,27);// rgb(220, 90, 50);
 
 $colors: (
+        disabled: $disabled,
         primary: $primary,
         blue: $blue,
         green: $green,
@@ -60,6 +80,8 @@ $header-color: $primary;
 
 // derived colors
 
+$disabled-dark: darken($disabled, 20%);
+$disabled-light: lighten($disabled, 20%);
 $primary-dark: darken($primary, 20%);
 $primary-light: lighten($primary, 20%);
 $blue-dark: darken($blue, 20%);
@@ -76,9 +98,9 @@ $red-light: lighten($red, 20%);
 // metrics
 
 $spacing-base: $font-size-base;
-$spacing-small: ceil($spacing-base / $scale-ratio);
-$spacing-tiny: ceil($spacing-small / $scale-ratio);
-$spacing-large: ceil($spacing-base * $scale-ratio);
+$spacing-small: ceil($spacing-base / $golden-ratio);
+$spacing-tiny: ceil($spacing-small / $golden-ratio/ $golden-ratio);
+$spacing-large: ceil($spacing-base * $golden-ratio);
 
 $inset-base: $spacing-base;
 $inset-small: $spacing-small;
@@ -95,8 +117,13 @@ $panel-background-hover: #DDDDDD;
 
 // cards
 $card-background: lighten($base-background, 20%);
+$card-border-color: #666666;
 $card-border-radius: 3px;
 $card-color-border-size: 3px;
+$card-header-background: #dae2e8;
+$card-header-foreground: #4d6679;
+$card-footer-background: #e9eef1;
+$card-footer-foreground: #4d6679;
 
 // list
 $list-item-background: #FFFFFF;
@@ -105,9 +132,9 @@ $list-item-foreground: $base-foreground;
 $list-item-divider-color: #DDDDDD;
 
 // nav
-$nav-bright-background: $panel-background;
-$nav-bright-background-hover: $panel-background-hover;
-$nav-bright-foreground: $panel-foreground;
+$nav-light-background: $panel-background;
+$nav-light-background-hover: $panel-background-hover;
+$nav-light-foreground: $panel-foreground;
 
 $nav-dark-background: #3c424c;
 $nav-dark-background-hover: darken($nav-dark-background, 10%);

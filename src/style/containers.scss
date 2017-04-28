@@ -1,19 +1,23 @@
 @import "theme-constants.scss";
 
+.block {
+  margin-top: $spacing-base;
+  margin-bottom: $spacing-base;
+}
+
 .container {
   margin: 0;
 }
 
-.block {
-  margin: $spacing-base 0;
+.content {
+  margin-left: $inset-base;
+  margin-right: $inset-base;
 }
 
 .content-wrapper {
   display: block;
   margin: 0 auto;
-  max-width: $media-lg;
-  padding: 0 $inset-base;
-  max-width: $media-lg;
+  max-width: $media-xl;
 }
 
 .inset-base {

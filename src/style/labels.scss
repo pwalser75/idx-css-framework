@@ -1,0 +1,15 @@
+@import "theme-constants.scss";
+
+@each $name, $color in $colors {
+  .label-#{$name} {
+    display: inline-block;
+    font-size: $font-size-tiny;
+    font-weight: $font-weight-semi-bold;
+    background: #{$color};
+    color: white;
+    border-radius: 3px;
+    padding: $inset-tiny;
+    min-width: 2em;
+    text-align: center;
+  }
+}

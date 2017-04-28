@@ -26,7 +26,7 @@ const config = {
 	},
 	filetypes: {
 		stylesheet: ['scss'],
-		resources:  ['html','css','json','jpg','png','svg','woff','woff2']
+		resources:  ['html','css','js','json','jpg','png','svg','woff','woff2']
 	}
 };
 

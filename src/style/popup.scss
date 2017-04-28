@@ -6,6 +6,8 @@
   position: relative;
 
   > ul {
+    background: $nav-popup-background;
+    color: $nav-popup-foreground;
     font-size: $font-size-base;
     margin: 0;
     padding: 0;
@@ -24,8 +26,6 @@
   > ul > li {
     display: block;
     padding: $inset-small;
-    background: $nav-popup-background;
-    color: $nav-popup-foreground;
     position: relative;
     border-bottom: 1px solid $nav-popup-divider-color;
     text-overflow: ellipsis;

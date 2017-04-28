@@ -1,48 +1,29 @@
 @import "theme-constants.scss";
 
-.header {
-  background: $nav-dark-background;
-  box-shadow: 0 0 4px 4px $shadow-color;
-
-  nav {
-    margin:0;
-	user-select: none;
-  }
-}
-
-.header .navbar {
-  background: none;
-}
-
-.navbar-bright {
-  color: $nav-bright-foreground;
-  > * {
-    background-color: $nav-bright-background;
-  }
+.navbar-light {
+  color: $nav-light-foreground;
+  background-color: $nav-light-background;
   a, a:active, a:visited, a:hover {
-    color: $nav-bright-foreground;
+    color: $nav-light-foreground;
   }
-  > a:hover, > div:hover {
-    background-color: $nav-bright-background-hover;
+  .navbar, + .navbar {
+    > a:hover, > div:hover {
+      background-color: $nav-light-background-hover;
+    }
   }
 }
 
 .navbar-dark {
   color: $nav-dark-foreground;
-  > * {
-    background-color: $nav-dark-background;
-  }
+  background-color: $nav-dark-background;
   a, a:active, a:visited, a:hover {
     color: $nav-dark-foreground;
   }
-  > a:hover, > div:hover {
-    background-color: $nav-dark-background-hover;
+  .navbar, + .navbar {
+    > a:hover, > div:hover {
+      background-color: $nav-dark-background-hover;
+    }
   }
-}
-
-.navbar-border {
-  border: 1px solid gray;
-  border-radius: 3px;
 }
 
 .navbar {
@@ -51,7 +32,6 @@
   flex-wrap: nowrap;
   align-content: space-between;
 
-  margin: 0 0 $spacing-base 0;
   padding: 0;
 
   .pull {
@@ -74,5 +54,20 @@
     font-weight: normal;
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.navbar-border {
+  border: 1px solid gray;
+  border-radius: 3px;
+
+  > * {
+    padding: $inset-small;
+  }
+}
+
+.navbar-small {
+  > * {
+    padding: $inset-small;
   }
 }

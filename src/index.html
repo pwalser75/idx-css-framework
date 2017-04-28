@@ -11,51 +11,61 @@
 
     <link rel="stylesheet" href="idx-style-min.css">
     <link rel="stylesheet" href="include/font-awesome.min.css">
+    <script type="text/javascript" src="include/jquery-2.2.4.min.js"></script>
 
 </head>
 <body>
 
-<div class="header">
+<div class="header navbar-dark shadow-below">
     <div class="content-wrapper">
-        <nav class="navbar navbar-dark">
+        <nav class="navbar">
             <div>
                 <strong>IDX CSS Framework</strong>
             </div>
             <span class="pull"></span>
             <div>
-                <a href="#"><i class="fa fa-home"></i> Home</a>
+                <a href="#"><i class="fa fa-home"></i> <span class="hide-sm-down ">Home</span></a>
             </div>
-            <div class="popup popup-bottom-right">
-                <a href="#">?</a>
+            <div class="hide-xs-down popup popup-bottom-right">
+                <i class="fa fa-question-circle"></i> <span class="hide-sm-down ">About</span>
                 <ul>
-                    <li>
-                        <div>HTML/CSS example by Peter Walser</div>
-                    </li>
                     <li><a href="#">Version information</a></li>
                     <li><a href="#">Legal information</a></li>
                 </ul>
             </div>
-            <div>
-                <form>
-                    <a href="#">About</a>
-                </form>
-            </div>
-            <div class="popup popup-bottom-left">
-                <div>
-                    <!--
-                    <img src="images/user.png" height="20" alt="profile picture">
-                    -->
-                    <i class="fa fa-user"></i> Peter Walser <i class="fa fa-caret-down"></i>
-                </div>
+
+            <div class="hide-xs-down popup popup-bottom-left">
+                <i class="fa fa-user"></i> Peter Walser
                 <ul>
-                    <li><a href="#loginDialog"><i class="fa fa-key"></i> Login</a></li>
+                    <li><a href="#loginDialog"><i class="fa fa-wrench"></i> Preferences</a></li>
                     <li>
                         <div>
                             <a href="#"><i class="fa fa-power-off"></i> Logout</a>
                         </div>
                     </li>
-                    <li>
-                        <form><a href="#">Form Action</a></form>
+                </ul>
+            </div>
+
+            <!-- hamburger menu -->
+            <div class="display-xs-down popup popup-bottom-left">
+                <i class="fa fa-bars"></i>
+                <ul>
+                    <li class="popup popup-left-down"><i class="fa fa-user"></i> Peter Walser
+                        <ul>
+                            <li><i class="fa fa-wrench"></i> Preferences</li>
+                            <li>
+                                <div>
+                                    <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="popup popup-left-down">
+                        <i class="fa fa-question-circle"></i> About
+                        <ul>
+                            <li><a href="#">Version information</a></li>
+                            <li><a href="#">Legal information</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -69,357 +79,25 @@
     </div>
 </div>
 
-<div class="content-wrapper">
-
-    <div class="content">
-        <div class="container block inset-small card card-blue">
-            <h4>Popup demo</h4>
-
-            <div class="test popup">
-                Default
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li class="popup popup-right-down">
-                        Third
-                        <ul>
-                            <li>Fourth</li>
-                            <li>Fifth</li>
-                            <li class="popup popup-left-down">
-                                Sixth
-                                <ul>
-                                    <li>Seventh</li>
-                                    <li>Eight</li>
-                                </ul>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-left-up">
-                Left Up
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-left-down">
-                Left Down
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-right-up">
-                Right Up
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-right-down">
-                Right Down
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-bottom-left">
-                Bottom Left
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-bottom-right">
-                Bottom Right
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-top-left">
-                Top Left
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-
-            <div class="test popup popup-top-right">
-                Top Right
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li>Third</li>
-                </ul>
-            </div>
-        </div>
-
-        <nav class="navbar navbar-dark navbar-border">
-            <strong>Navbar Dark</strong>
-            <a href="#">Link1</a>
-            <a href="#">Link2</a>
-            <a href="#" class="popup">
-                Menu Left <i class="fa fa-caret-down"></i>
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li class="popup popup-right-down">Third <i class="fa fa-caret-right"></i>
-                        <ul>
-                            <li>Fourth</li>
-                        </ul>
-                    </li>
-                </ul>
-            </a>
-            <span class="pull"></span>
-            <a href="#" class="popup popup-bottom-left">Menu Right <i class="fa fa-caret-down"></i>
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li class="popup popup-left-down"><i class="fa fa-caret-left"></i> Third
-                        <ul>
-                            <li>Fourth</li>
-                        </ul>
-                    </li>
-                </ul>
-            </a>
+<div class="navbar-light">
+    <div class="content-wrapper">
+        <nav class="navbar navbar-small content">
+            <strong>FEATURES:</strong>
+            <a onclick="$('#content').load('labels.html');">Labels</a>
+            <a onclick="$('#content').load('responsive.html');">Responsive</a>
+            <a onclick="$('#content').load('grid.html');">Grid system</a>
+            <a onclick="$('#content').load('cards.html');">Cards</a>
+            <a onclick="$('#content').load('typography.html');">Typography</a>
+            <a onclick="$('#content').load('toolbars_popups_menus.html');">Toolbars, popups and menus</a>
         </nav>
-
-        <nav class="navbar navbar-bright navbar-border">
-            <strong>Navbar Bright</strong>
-            <a href="#">Link1</a>
-            <a href="#">Link2</a>
-            <a href="#" class="popup">
-                Menu Left <i class="fa fa-caret-down"></i>
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li class="popup popup-right-down">Third <i class="fa fa-caret-right"></i>
-                        <ul>
-                            <li>Fourth</li>
-                        </ul>
-                    </li>
-                </ul>
-            </a>
-            <span class="pull"></span>
-            <a href="#" class="popup popup-bottom-left">Menu Right <i class="fa fa-caret-down"></i>
-                <ul>
-                    <li>First</li>
-                    <li>Second</li>
-                    <li class="popup popup-left-down"><i class="fa fa-caret-left"></i> Third
-                        <ul>
-                            <li>Fourth</li>
-                        </ul>
-                    </li>
-                </ul>
-            </a>
-        </nav>
-
-        <div class="grid">
-            <div class="col-8">
-                <div class="inset-small card">
-                    <h3>Card</h3>
-                    Cards can contain content, and have optional headers and footers:
-                    <br>
-                    <br>
-
-                    <div class="grid">
-                        <div class="col-4">
-                            <div class="card">
-                                <header>Header</header>
-                                <section>
-                                    Here goes the content
-                                </section>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <section>
-                                    Here goes the content
-                                </section>
-                                <footer>Footer</footer>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card">
-                                <header>Header</header>
-                                <section>
-                                    Here goes the content
-                                </section>
-                                <footer>Footer</footer>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card card-primary">
-                    <header>Header</header>
-                    <section>
-                        Here goes the content
-                    </section>
-                    <footer>Footer</footer>
-                </div>
-            </div>
-
-        </div>
-        <div class="grid">
-            <div class="col-2">
-                <div class="inset-small card card-primary">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="inset-small card card-blue">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="inset-small card card-green">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="inset-small card card-yellow">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="inset-small card card-orange">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-            <div class="col-5">
-                <div class="inset-small card card-red">
-                    <h3>Card</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </div>
-            </div>
-
-        </div>
-
-        <div class="grid content">
-            <div class="col-4">
-                <div class="card">
-                    <header>Headers</header>
-                    <section>
-                        <h1>Header 1</h1>
-                        <h2>Header 2</h2>
-                        <h3>Header 3</h3>
-                        <h4>Header 4</h4>
-                        <h5>Header 5</h5>
-                        <h6>Header 6</h6>
-                    </section>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <header>Lists</header>
-                    <section>
-                        <ul>
-                            <li>First</li>
-                            <li>Second</li>
-                            <li>Third</li>
-                        </ul>
-                        <ol>
-                            <li>First</li>
-                            <li>Second</li>
-                            <li>Third</li>
-                        </ol>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis diam eget elit eleifend
-            vehicula
-            in
-            vitae purus. Maecenas pulvinar ligula egestas, elementum magna a, finibus ligula. Proin odio purus, congue
-            non
-            vulputate et, iaculis eu erat. Donec ac blandit ligula, et ornare lacus. Mauris facilisis malesuada
-            dignissim.
-            Nunc
-            viverra lorem eget ante interdum elementum. Quisque faucibus sagittis risus id suscipit. Nulla rutrum tellus
-            eu
-            turpis ornare pulvinar. Aenean ornare tellus non magna vehicula gravida.
-        </div>
-
-        <p>
-            Proin purus erat, dapibus non est venenatis, iaculis consequat mauris. Maecenas convallis dolor neque, sed
-            vulputate
-            nisi fringilla sit amet. Vestibulum non elit a sapien fermentum vulputate. Fusce a arcu vel turpis ultrices
-            posuere
-            non quis nunc. Sed risus odio, lobortis eu blandit vel, tempor ac arcu. Donec cursus eget ex non feugiat.
-            Nam
-            venenatis nibh id accumsan feugiat. Donec eu tellus vitae orci vulputate volutpat. Sed a convallis metus.
-            Etiam
-            volutpat pretium accumsan. Maecenas accumsan feugiat nibh nec ornare. Ut at tempus erat. Donec commodo lacus
-            nec
-            tortor varius finibus.
-        </p>
-        <p>
-            Suspendisse at fermentum turpis. Sed ornare et nisl sed semper. Phasellus sed orci non lacus viverra
-            facilisis
-            eu a
-            orci. Cras posuere dictum egestas. Phasellus posuere consequat sapien vitae rutrum. Phasellus nulla arcu,
-            venenatis
-            sit amet diam sit amet, ultricies tincidunt felis. Aenean quis lorem at purus aliquam tempor in ut erat.
-            Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi efficitur urna
-            ac
-            rhoncus maximus. Maecenas accumsan non nisl et tristique. Nunc maximus elit vel odio facilisis dictum. Fusce
-            nibh
-            erat, tempor eu ligula quis, pharetra blandit nibh. Proin ultricies interdum nisi, at ultricies leo
-            vestibulum
-            et.
-        </p>
-        <p>
-            Phasellus laoreet tellus arcu, vel mollis est dignissim et. Fusce ut justo a sem maximus pulvinar. Ut nulla
-            turpis,
-            mollis id nunc eu, gravida venenatis elit. In hac habitasse platea dictumst. Phasellus fermentum libero dui,
-            at
-            maximus tortor interdum eget. Cras blandit cursus enim, vel consectetur leo. Vestibulum ut iaculis odio.
-        </p>
-        <p>
-            Praesent vel lacus non orci mattis rutrum a eget lorem. Donec quis purus ullamcorper, egestas est a,
-            hendrerit
-            quam.
-            Duis placerat neque orci. Cras facilisis ligula vitae sapien semper blandit. Cras in fermentum nulla, in
-            porta
-            odio.
-            Phasellus dignissim suscipit enim, nec condimentum eros rutrum vel. Aliquam vel ultricies nulla.
-            Pellentesque
-            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed finibus ut erat ut
-            faucibus.
-            Quisque vulputate, ligula nec pulvinar facilisis, leo lorem rutrum est, a bibendum nunc tellus sed eros.
-            Proin
-            enim
-            eros, commodo ut consequat at, condimentum in sapien. Sed eu efficitur dolor. Maecenas vitae arcu lectus.
-            Aliquam
-            ligula turpis, malesuada nec ultricies nec, posuere at lacus.
-        </p>
     </div>
 
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <div id="content"></div>
+    </div>
 </div>
 </body>
 </html>
