@@ -11,6 +11,7 @@ const cssMinify = require('gulp-cssnano');
 const runSequence = require('run-sequence');
 const cssConcat = require('gulp-concat-css');
 
+const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
 const url = require('url');
@@ -36,24 +37,31 @@ function fileTypeMatcher(fileSuffixArray) {
 	return fileSuffixArray.map(type=> config.source+'/**/*.'+type);
 }
 
-gulp.task('compile-stylesheets', () => {
+function compileStylesheets() {
 	return gulp.src(fileTypeMatcher(config.filetypes.stylesheet))
+		.pipe(plumber({
+			errorHandler: notify.onError('Error: <%= error.message %>')
+		}))
 		.pipe(sass(({
             precision: 10,
             includePaths: 'node_modules/node-normalize-scss'
         })).on('error', sass.logError))
 		.pipe(cssPrefixer())
 		.pipe(cssConcat(config.css.target))
-		.pipe(gulp.dest(config.target))
-		.pipe(browserSync.stream())
-		.pipe(notify({title: config.projectName, message: 'Updated stylesheets', onLast: true }));
+		.pipe(gulp.dest(config.target));
+}
+
+function copyResources() {
+	return gulp.src(fileTypeMatcher(config.filetypes.resources))
+		.pipe(gulp.dest(config.target));
+}
+
+gulp.task('compile-stylesheets', () => {
+	return compileStylesheets();
 });
 
 gulp.task('copy-resources', () => {
-	return gulp.src(fileTypeMatcher(config.filetypes.resources))
-		.pipe(gulp.dest(config.target))
-		.pipe(browserSync.stream())
-		.pipe(notify({title: config.projectName, message: 'Updated resources', onLast: true }));
+	return copyResources();
 });
 
 // build targets
@@ -74,8 +82,18 @@ gulp.task('minify', () => {
 });
 
 gulp.task('watch', ['build'], () => {
-	gulp.watch(fileTypeMatcher(config.filetypes.stylesheet), [ 'compile-stylesheets' ]);
-	gulp.watch(fileTypeMatcher(config.filetypes.resources), [ 'copy-resources' ]);
+	
+	var syncNotify = (stream, message) => {
+		return stream
+		.pipe(browserSync.stream())
+		.pipe(notify({title: config.projectName, message: message, onLast: true }));
+	}
+	
+	gulp.watch(fileTypeMatcher(config.filetypes.stylesheet),
+		()=>syncNotify(compileStylesheets(), "Compiled stylesheets"));
+
+	gulp.watch(fileTypeMatcher(config.filetypes.resources),
+		()=>syncNotify(copyResources(), "Updated resources"));
 });
 
 gulp.task('server', ['watch'], () => {
