@@ -6,7 +6,7 @@
   a, a:active, a:visited, a:hover {
     color: $nav-light-foreground;
   }
-  .navbar, + .navbar {
+  .navbar, &.navbar {
     > a:hover, > div:hover {
       background-color: $nav-light-background-hover;
     }
@@ -19,7 +19,7 @@
   a, a:active, a:visited, a:hover {
     color: $nav-dark-foreground;
   }
-  .navbar, + .navbar {
+  .navbar, &.navbar {
     > a:hover, > div:hover {
       background-color: $nav-dark-background-hover;
     }
@@ -60,14 +60,15 @@
 .navbar-border {
   border: 1px solid gray;
   border-radius: 3px;
-
-  > * {
-    padding: $inset-small;
-  }
 }
 
 .navbar-small {
   > * {
     padding: $inset-small;
+  }
+}
+.navbar-large {
+  > * {
+    padding: $inset-large;
   }
 }

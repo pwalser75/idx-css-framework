@@ -35,7 +35,7 @@
             </div>
 
             <div class="hide-xs-down popup popup-bottom-left">
-                <i class="fa fa-user"></i> Peter Walser
+                <i class="fa fa-user"></i> Test User
                 <ul>
                     <li><a href="#loginDialog"><i class="fa fa-wrench"></i> Preferences</a></li>
                     <li>
@@ -50,7 +50,7 @@
             <div class="display-xs-down popup popup-bottom-left">
                 <i class="fa fa-bars"></i>
                 <ul>
-                    <li class="popup popup-left-down"><i class="fa fa-user"></i> Peter Walser
+                    <li class="popup popup-left-down"><i class="fa fa-user"></i> Test User
                         <ul>
                             <li><i class="fa fa-wrench"></i> Preferences</li>
                             <li>
@@ -83,11 +83,13 @@
     <div class="content-wrapper">
         <nav class="navbar navbar-small content">
             <strong>FEATURES:</strong>
+            <a onclick="$('#content').load('examples/containers.html');">Containers</a>
             <a onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
             <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
             <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
             <a onclick="$('#content').load('examples/cards.html');">Cards</a>
             <a onclick="$('#content').load('examples/typography.html');">Typography</a>
+            <a onclick="$('#content').load('examples/tables.html');">Tables</a>
             <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
         </nav>
     </div>
@@ -99,7 +101,7 @@
         <div id="content"></div>
     </div>
     <script>
-        $('#content').load('examples/labels_colors.html');
+        $('#content').load('examples/containers.html');
     </script>
 </div>
 </body>

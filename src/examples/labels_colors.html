@@ -1,32 +1,35 @@
 <h1>Labels &amp; Colors</h1>
 
+
+<h3>Colors</h3>
 The styles support <strong>7 built-in colors</strong>:
-<p>
-    <b class="foreground-primary">Primary</b>,
-    <b class="foreground-disabled">Disabled</b>,
-    and the colors
-    <b class="foreground-blue">Blue</b>,
-    <b class="foreground-green">Green</b>,
-    <b class="foreground-yellow">Yellow</b>,
-    <b class="foreground-orange">Orange</b>,
-    <b class="foreground-red">Red</b>
-</p>
+<b class="foreground-primary">Primary</b>,
+<b class="foreground-disabled">Disabled</b>,
+and the colors
+<b class="foreground-blue">Blue</b>,
+<b class="foreground-green">Green</b>,
+<b class="foreground-yellow">Yellow</b>,
+<b class="foreground-orange">Orange</b>,
+<b class="foreground-red">Red</b>
+<br>
 The color styles can be used as foreground or background:
 <p>
-    <b class="background-primary">Primary</b>,
-    <b class="background-disabled">Disabled</b>,
-    <b class="background-blue">Blue</b>,
-    <b class="background-green">Green</b>,
-    <b class="background-yellow">Yellow</b>,
-    <b class="background-orange">Orange</b>,
-    <b class="background-red">Red</b>
+    <b class="background-primary inset-small">Primary</b>
+    <b class="background-disabled inset-small">Disabled</b>
+    <b class="background-blue inset-small">Blue</b>
+    <b class="background-green inset-small">Green</b>
+    <b class="background-yellow inset-small">Yellow</b>
+    <b class="background-orange inset-small">Orange</b>
+    <b class="background-red inset-small">Red</b>
 </p>
 
+<h3>Labels</h3>
 <strong>Labels </strong> are very versatile, as they can be used for labels, tags, and small buttons;
 
 <ul>
     <li><b>Text only</b><br>
-        <label class="label-primary">Primary</label>
+        <label class="label-primary">Primary <span class="background-lighten">LIGHTEN</span> <span
+                class="background-darken">DARKEN</span></label>
         <label class="label-disabled">Disabled</label>
         <label class="label-blue">Blue</label>
         <label class="label-green">Green</label>
@@ -53,3 +56,40 @@ The color styles can be used as foreground or background:
         <label class="label-red"><i class="fa fa-remove"></i></label>
     </li>
 </ul>
+
+<table class="table-striped">
+    <tr>
+        <td>Foreground</td>
+        <td>
+            <div class="foreground-primary">
+                Lorem ipsum
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Background</td>
+        <td>
+            <div class="background-primary">
+                Lorem ipsum
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Lighten</td>
+        <td>
+            <div class="background-primary">
+                <div class="background-lighten">Lorem ipsum</div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>Darken</td>
+        <td>
+            <div class="background-primary">
+                <div class="background-darken">Lorem ipsum</div>
+            </div>
+        </td>
+    </tr>
+
+
+</table>

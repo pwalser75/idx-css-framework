@@ -1,0 +1,21 @@
+@import "theme-constants.scss";
+
+@each $name, $color in $colors {
+
+  .foreground-#{$name} {
+    color: #{$color};
+  }
+
+  .background-#{$name} {
+    color: white;
+    background-color: #{$color};
+  }
+}
+
+.background-lighten {
+  background-color: $transparent-lighten;
+}
+
+.background-darken {
+  background-color: $transparent-darken;
+}

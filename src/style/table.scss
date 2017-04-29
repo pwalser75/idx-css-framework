@@ -1,0 +1,47 @@
+@import "theme-constants.scss";
+
+table {
+  overflow-x: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  tr {
+  }
+
+  th, td {
+    padding: $inset-small;
+    text-align: left;
+  }
+  th{
+    background: $table-header-background;
+    color: $table-header-foreground;
+  }
+  td{
+    border-top: 1px solid $table-separator-color;
+    background: $table-cell-background;
+    color: $table-cell-foreground;
+  }
+  tr:first-child > td {
+    border-top: 0;
+  }
+
+  &.table-striped {
+    tr:nth-child(even) > td {
+      background: $table-zebra-cell-background;
+      color: $table-zebra-cell-foreground;
+    }
+  }
+
+  &.table-key-value {
+    tr > td:first-child {
+      background: $card-header-background;
+      font-weight: $font-weight-bold;
+      background: $table-first-cell-background;
+      color: $table-first-cell-foreground;
+      border-right: 2px solid $table-separator-color;
+    }
+    tr > th:first-child {
+      border-right: 2px solid $table-separator-color;
+    }
+  }
+}

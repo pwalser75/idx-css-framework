@@ -54,13 +54,13 @@ $base-foreground-dark: darken($base-foreground, 10%);
 $base-foreground-light: lighten($base-foreground, 10%);
 $shadow-color: rgba(0, 0, 0, 0.4);
 
-$disabled: rgb(172,165,134);
+$disabled: rgb(172, 165, 134);
 $primary: rgb(64, 81, 105);
 $blue: rgb(70, 130, 180);
 $green: rgb(150, 190, 10);
-$yellow: rgb(255,201,1);//(254,211,60);
-$orange: rgb(255,144,15);// rgb(251, 164, 0);
-$red: rgb(223,40,27);// rgb(220, 90, 50);
+$yellow: rgb(255, 201, 1); //(254,211,60);
+$orange: rgb(255, 144, 15); // rgb(251, 164, 0);
+$red: rgb(223, 40, 27); // rgb(220, 90, 50);
 
 $colors: (
         disabled: $disabled,
@@ -77,6 +77,9 @@ $success: $green;
 $warning: $orange;
 $error: $red;
 $header-color: $primary;
+
+$transparent-lighten: rgba(255, 255, 255, 0.1);
+$transparent-darken: rgba(0, 0, 0, 0.1);
 
 // derived colors
 
@@ -97,15 +100,26 @@ $red-light: lighten($red, 20%);
 
 // metrics
 
-$spacing-base: $font-size-base;
-$spacing-small: ceil($spacing-base / $golden-ratio);
-$spacing-tiny: ceil($spacing-small / $golden-ratio/ $golden-ratio);
-$spacing-large: ceil($spacing-base * $golden-ratio);
+$spacing-base: 10px;
+$spacing-small: 6px;
+$spacing-tiny: 3px;
+$spacing-large: 20px;
 
-$inset-base: $spacing-base;
-$inset-small: $spacing-small;
-$inset-large: $spacing-large;
-$inset-tiny: $spacing-tiny;
+$inset-base: $spacing-base ceil($spacing-base*$golden-ratio);
+$inset-small: $spacing-small ceil($spacing-small*$golden-ratio);
+$inset-large: $spacing-large ceil($spacing-large*$golden-ratio);
+$inset-tiny: $spacing-tiny ceil($spacing-tiny*$golden-ratio);
+
+// table
+$table-separator-color: #CCCCCC;
+$table-cell-background: #FFFFFF;
+$table-cell-foreground: $base-foreground;
+$table-header-background: #FFFFFF;
+$table-header-foreground: $base-foreground;
+$table-first-cell-background: #EEEEEE;
+$table-first-cell-foreground: $table-cell-foreground;
+$table-zebra-cell-background: #F7F7F7;
+$table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
 $grid-column-spacing: $spacing-small;

@@ -29,6 +29,66 @@
 The breakpoint sizes are defined in <code>theme-constants.scss</code>
 </p>
 
+<h3>Example usage</h3>
+The following toolbar contains items with icons and text.
+When reducing the screen size, the text gets hidden, and when further reducing the size, the items get hidden and the hamburger menu is shown.
+
+<nav class="navbar navbar-light navbar-border block">
+    <strong>Responsive navbar</strong>
+    <a onclick="" class="hide-sm-down">
+        <i class="fa fa-leaf"></i>
+        <span class="display-lg-up">First</span>
+    </a>
+    <a onclick="" class="hide-sm-down">
+        <i class="fa fa-id-card-o"></i>
+        <span class="display-lg-up">Second</span>
+    </a>
+    <a onclick="" class="hide-sm-down">
+        <i class="fa fa-magic"></i>
+        <span class="display-lg-up">Third</span>
+    </a>
+    <div class="display-lg-up">
+        <label class="label-blue">
+            <i class="fa fa-chevron-left"></i>
+            Icons and labels
+        </label>
+    </div>
+    <div class="display-md-up display-md-down">
+        <label class="label-green">
+            <i class="fa fa-chevron-left"></i>
+            Icons only
+        </label>
+    </div>
+    <span class="pull"></span>
+    <div class="display-sm-down">
+        <label class="label-red">
+            Items in menu
+            <i class="fa fa-chevron-right"></i>
+        </label>
+    </div>
+    <div class="popup popup-top-left display-sm-down">
+        <i class="fa fa-bars"></i>
+        <ul>
+            <li><a onclick="">
+                <i class="fa fa-leaf"></i>
+                <span>First</span>
+            </a>
+            </li>
+            <li>
+                <a onclick="">
+                    <i class="fa fa-id-card-o"></i>
+                    <span>Second</span>
+                </a>
+            </li>
+            <li> <a onclick="">
+                <i class="fa fa-magic"></i>
+                <span>Third</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <h3>Responsive special classes</h3>
 The following classes can be used to conditionally show/hide elements depending on the media size (only applicable ones are displayed, resize the screen to discover them all):
 
@@ -66,62 +126,3 @@ The following classes can be used to conditionally show/hide elements depending 
 <label class="label-primary hide-xs-up">hide-xs-up</label>
 <label class="label-primary hide-xs-down">hide-xs-down</label>
 
-<h3>Example usage</h3>
-The following toolbar contains items with icons and text.
-When reducing the screen size, the text gets hidden, and when further reducing the size, the items get hidden and the hamburger menu is shown.
-
-<nav class="navbar navbar-light navbar-border block">
-    <strong>Responsive navbar</strong>
-    <a onclick="" class="hide-sm-down">
-        <i class="fa fa-leaf"></i>
-        <span class="display-lg-up">First</span>
-    </a>
-    <a onclick="" class="hide-sm-down">
-        <i class="fa fa-id-card-o"></i>
-        <span class="display-lg-up">Second</span>
-    </a>
-    <a onclick="" class="hide-sm-down">
-        <i class="fa fa-magic"></i>
-        <span class="display-lg-up">Third</span>
-    </a>
-    <div class="display-lg-up">
-        <label class="label-blue">
-            <i class="fa fa-lightbulb-o"></i>
-            Showing items with icons and labels
-        </label>
-    </div>
-    <div class="display-md-up display-md-down">
-        <label class="label-green">
-            <i class="fa fa-lightbulb-o"></i>
-            Showing icons only, hiding labels
-        </label>
-    </div>
-    <span class="pull"></span>
-    <div class="display-sm-down">
-        <label class="label-red">
-            <i class="fa fa-lightbulb-o"></i>
-            Hiding items, showing hamburger menu instead
-        </label>
-    </div>
-    <div class="popup popup-top-left display-sm-down">
-        <i class="fa fa-bars"></i>
-        <ul>
-           <li><a onclick="">
-                <i class="fa fa-leaf"></i>
-                <span>First</span>
-            </a>
-           </li>
-            <li>
-            <a onclick="">
-                <i class="fa fa-id-card-o"></i>
-                <span>Second</span>
-            </a>
-            </li>
-            <li> <a onclick="">
-                <i class="fa fa-magic"></i>
-                <span>Third</span>
-            </a>
-            </li>
-        </ul>
-    </div>
-</nav>

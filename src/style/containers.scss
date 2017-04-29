@@ -1,27 +1,11 @@
 @import "theme-constants.scss";
 
-.block {
-  margin-top: $spacing-base;
-  margin-bottom: $spacing-base;
-}
-
-.container {
-  margin: 0;
-}
-
-.content {
-  margin-left: $inset-base;
-  margin-right: $inset-base;
-}
-
-.content-wrapper {
-  display: block;
-  margin: 0 auto;
-  max-width: $media-xl;
-}
-
 .inset-base {
   padding: $inset-base;
+}
+
+.inset-tiny {
+  padding: $inset-tiny;
 }
 
 .inset-small {
@@ -30,4 +14,34 @@
 
 .inset-large {
   padding: $inset-large;
+}
+
+.tab {
+  margin-left: $spacing-large;
+}
+
+.block {
+  margin-top: ceil($spacing-base/2);
+  margin-bottom: ceil($spacing-base/2);
+  display: block;
+}
+
+.inline-block {
+  @extend .block;
+  display: inline-block;
+}
+
+.container {
+  margin: 0;
+}
+
+.content {
+  margin-left: $spacing-base;
+  margin-right: $spacing-base;
+}
+
+.content-wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: $media-xl;
 }
