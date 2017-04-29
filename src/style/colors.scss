@@ -7,7 +7,14 @@
   }
 
   .background-#{$name} {
-    color: white;
+    @if $name == 'dark' {
+      color: $dark-foreground;
+    } @else if $name == 'light' {
+      color: $light-foreground;
+    } @else {
+      color: white;
+    }
+
     background-color: #{$color};
   }
 }

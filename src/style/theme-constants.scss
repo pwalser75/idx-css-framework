@@ -9,7 +9,6 @@ $media-sm: 480px; /* Extra Small Devices, Phones */
 $media-md: 768px; /* Small Devices, Tablets */
 $media-lg: 992px; /* Medium Devices, Desktops */
 $media-xl: 1200px; /* Large Devices, Wide Screens */
-$media-xs-min: 0;
 $media-xs-max: $media-sm - 1;
 $media-sm-min: $media-sm;
 $media-sm-max: $media-md - 1;
@@ -18,7 +17,6 @@ $media-md-max: $media-lg - 1;
 $media-lg-min: $media-lg;
 $media-lg-max: $media-xl - 1;
 $media-xl-min: $media-xl;
-$media-xl-max: 1000000000;
 
 // Typography
 
@@ -44,7 +42,7 @@ $font-size-h6: 12px;
 $font-size-page-title: 60px;
 $font-size-page-subtitle: 40px;
 
-$line-height: 1em * $sqrt2;
+$line-height: $sqrt2;
 
 // Colors
 
@@ -54,8 +52,10 @@ $base-foreground-dark: darken($base-foreground, 10%);
 $base-foreground-light: lighten($base-foreground, 10%);
 $shadow-color: rgba(0, 0, 0, 0.4);
 
-$disabled: rgb(172, 165, 134);
 $primary: rgb(64, 81, 105);
+$dark: #3c424c;
+$light: #EEEEEE;
+$disabled: rgb(172, 165, 134);
 $blue: rgb(70, 130, 180);
 $green: rgb(150, 190, 10);
 $yellow: rgb(255, 201, 1); //(254,211,60);
@@ -63,8 +63,10 @@ $orange: rgb(255, 144, 15); // rgb(251, 164, 0);
 $red: rgb(223, 40, 27); // rgb(220, 90, 50);
 
 $colors: (
-        disabled: $disabled,
+        dark: $dark,
+        light: $light,
         primary: $primary,
+        disabled: $disabled,
         blue: $blue,
         green: $green,
         yellow: $yellow,
@@ -125,9 +127,17 @@ $table-zebra-cell-foreground: $table-cell-foreground;
 $grid-column-spacing: $spacing-small;
 
 // panels
-$panel-background: #EEEEEE;
-$panel-foreground: #666666;
-$panel-background-hover: #DDDDDD;
+
+$light-background: $light;
+$light-background-hover:  darken($light-background, 10%);
+$light-foreground: #666666;
+$light-divider-color: darken($light-background, 20%);
+
+$dark-background: $dark;
+$dark-background-hover: darken($dark-background, 10%);
+$dark-foreground: #FFFFFF;
+$dark-divider-color: darken($dark-background, 20%);
+
 
 // cards
 $card-background: lighten($base-background, 20%);
@@ -146,14 +156,6 @@ $list-item-foreground: $base-foreground;
 $list-item-divider-color: #DDDDDD;
 
 // nav
-$nav-light-background: $panel-background;
-$nav-light-background-hover: $panel-background-hover;
-$nav-light-foreground: $panel-foreground;
-
-$nav-dark-background: #3c424c;
-$nav-dark-background-hover: darken($nav-dark-background, 10%);
-$nav-dark-foreground: #FFFFFF;
-
 $nav-popup-background: $list-item-background;
 $nav-popup-background-hover: darken($nav-popup-background, 5%);
 $nav-popup-foreground: $list-item-foreground;

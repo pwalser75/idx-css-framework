@@ -2,8 +2,10 @@
 
 
 <h3>Colors</h3>
-The styles support <strong>7 built-in colors</strong>:
+The styles support <strong>several built-in colors</strong>:
 <b class="foreground-primary">Primary</b>,
+<b class="foreground-dark">Dark</b>,
+<b class="foreground-light">Light</b>,
 <b class="foreground-disabled">Disabled</b>,
 and the colors
 <b class="foreground-blue">Blue</b>,
@@ -15,6 +17,8 @@ and the colors
 The color styles can be used as foreground or background:
 <p>
     <b class="background-primary inset-small">Primary</b>
+    <b class="background-dark inset-small">Dark</b>
+    <b class="background-light inset-small">Light</b>
     <b class="background-disabled inset-small">Disabled</b>
     <b class="background-blue inset-small">Blue</b>
     <b class="background-green inset-small">Green</b>
@@ -28,8 +32,9 @@ The color styles can be used as foreground or background:
 
 <ul>
     <li><b>Text only</b><br>
-        <label class="label-primary">Primary <span class="background-lighten">LIGHTEN</span> <span
-                class="background-darken">DARKEN</span></label>
+        <label class="label-primary">Primary</label>
+        <label class="label-dark">Dark</label>
+        <label class="label-light">Light</label>
         <label class="label-disabled">Disabled</label>
         <label class="label-blue">Blue</label>
         <label class="label-green">Green</label>
@@ -38,22 +43,48 @@ The color styles can be used as foreground or background:
         <label class="label-red">Red</label>
     </li>
     <li><b>With icons</b><br>
-        <label class="label-disabled"><i class="fa fa-tag"></i> Disabled</label>
         <label class="label-primary"><i class="fa fa-bars"></i> Primary</label>
+        <label class="label-dark"><i class="fa fa-comment"></i> Dark</label>
+        <label class="label-light"><i class="fa fa-check"></i> Light</label>
+        <label class="label-disabled"><i class="fa fa-tag"></i> Disabled</label>
         <label class="label-blue"><i class="fa fa-battery-half"></i> Blue</label>
         <label class="label-green"><i class="fa fa-leaf"></i> Green</label>
         <label class="label-yellow"><i class="fa fa-magic"></i> Yellow</label>
         <label class="label-orange"><i class="fa fa-paper-plane"></i> Orange</label>
         <label class="label-red"><i class="fa fa-remove"></i> Red</label>
     </li>
+    <li><b>With optional border</b><br>
+        <label class="label-primary border"><i class="fa fa-bars"></i> Primary</label>
+        <label class="label-dark border"><i class="fa fa-comment"></i> Dark</label>
+        <label class="label-light border"><i class="fa fa-check"></i> Light</label>
+        <label class="label-disabled border"><i class="fa fa-tag"></i> Disabled</label>
+        <label class="label-blue border"><i class="fa fa-battery-half"></i> Blue</label>
+        <label class="label-green border"><i class="fa fa-leaf"></i> Green</label>
+        <label class="label-yellow border"><i class="fa fa-magic"></i> Yellow</label>
+        <label class="label-orange border"><i class="fa fa-paper-plane"></i> Orange</label>
+        <label class="label-red border"><i class="fa fa-remove"></i> Red</label>
+    </li>
     <li><b>Icons only:</b><br>
-        <label class="label-disabled"><i class="fa fa-tag"></i></label>
         <label class="label-primary"><i class="fa fa-bars"></i></label>
+        <label class="label-dark"><i class="fa fa-comment"></i></label>
+        <label class="label-light"><i class="fa fa-check"></i></label>
+        <label class="label-disabled"><i class="fa fa-tag"></i></label>
         <label class="label-blue"><i class="fa fa-battery-half"></i></label>
         <label class="label-green"><i class="fa fa-leaf"></i></label>
         <label class="label-yellow"><i class="fa fa-magic"></i></label>
         <label class="label-orange"><i class="fa fa-paper-plane"></i></label>
         <label class="label-red"><i class="fa fa-remove"></i></label>
+    </li>
+    <li><b>Icons with border and shadow:</b><br>
+        <label class="label-primary border material-shadow-1"><i class="fa fa-bars"></i></label>
+        <label class="label-dark border material-shadow-1"><i class="fa fa-comment"></i></label>
+        <label class="label-light border material-shadow-1"><i class="fa fa-check"></i></label>
+        <label class="label-disabled border material-shadow-1"><i class="fa fa-tag"></i></label>
+        <label class="label-blue border material-shadow-1"><i class="fa fa-battery-half"></i></label>
+        <label class="label-green border material-shadow-1"><i class="fa fa-leaf"></i></label>
+        <label class="label-yellow border material-shadow-1"><i class="fa fa-magic"></i></label>
+        <label class="label-orange border material-shadow-1"><i class="fa fa-paper-plane"></i></label>
+        <label class="label-red border material-shadow-1"><i class="fa fa-remove"></i></label>
     </li>
 </ul>
 

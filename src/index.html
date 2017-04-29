@@ -1,67 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>IDX CSS Framework</title>
+<head><title>IDX CSS Framework</title>
     <base href="">
-
     <meta charset="UTF-8">
     <meta http-equiv="cleartype" content="on">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="stylesheet" href="idx-style-min.css">
     <link rel="stylesheet" href="include/font-awesome.min.css">
     <script type="text/javascript" src="include/jquery-2.2.4.min.js"></script>
-
 </head>
 <body>
-
-<div class="header navbar-dark shadow-below">
+<div class="header shadow-below background-dark">
     <div class="content-wrapper">
-        <nav class="navbar">
-            <div>
-                <strong>IDX CSS Framework</strong>
-            </div>
+        <nav class="navbar-dark navbar">
+            <div><strong>IDX CSS Framework</strong></div>
             <span class="pull"></span>
-            <div>
-                <a href="#"><i class="fa fa-home"></i> <span class="hide-sm-down ">Home</span></a>
+            <div class="hide-xs-down popup popup-bottom-left"> Fancy popup content
+                <div class="popup-content inset-base" style="width: 400px">
+                    <div class="grid">
+                        <div class="col-4"><h2>First</h2> <img src="images/image1.jpg">
+                            <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis, diam
+                                vitae tempus finibus, nunc ante molestie risus, vitae consectetur lorem tortor a urna.
+                                Fusce rutrum est dapibus mauris venenatis, at egestas metus viverra. Suspendisse a ex
+                                non est dignissim convallis non ut odio. Maecenas vitae lacinia ligula. Maecenas sed
+                                odio ac erat consectetur pretium ut at sem.
+                            </small>
+                        </div>
+                        <div class="col-4"><h2>Second</h2> <img src="images/image2.jpg">
+                            <small> Curabitur arcu mi, hendrerit nec risus quis, rhoncus viverra augue. Vestibulum quis
+                                felis sit amet mauris rhoncus vehicula. Donec pretium nibh vitae pulvinar pretium.
+                                Mauris eu dignissim risus, ac ornare tellus. Cras ac justo ut nulla fringilla sagittis
+                                at quis felis. Vestibulum semper, urna ac porta sagittis, quam ligula commodo metus, sit
+                                amet tincidunt justo ligula ut ex.
+                            </small>
+                        </div>
+                        <div class="col-4"><h2>Third</h2> <img src="images/image3.jpg">
+                            <small>Vestibulum massa justo, dictum sollicitudin pretium id, malesuada vitae risus. Donec
+                                sollicitudin, justo a finibus hendrerit, turpis justo mollis neque, et vestibulum felis
+                                elit ut nisl. Aenean pretium porta mi vel feugiat. Ut tincidunt libero at felis iaculis,
+                                ut porta odio accumsan. Suspendisse sollicitudin pulvinar euismod. Vivamus quis eros in
+                                ex ullamcorper tincidunt.
+                            </small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="hide-xs-down popup popup-bottom-right">
-                <i class="fa fa-question-circle"></i> <span class="hide-sm-down ">About</span>
+            <div><a href="#"><i class="fa fa-home"></i> <span class="hide-sm-down ">Home</span></a></div>
+            <div class="hide-xs-down popup popup-bottom-right"><i class="fa fa-question-circle"></i> <span
+                    class="hide-sm-down ">About</span>
                 <ul>
                     <li><a href="#">Version information</a></li>
                     <li><a href="#">Legal information</a></li>
                 </ul>
             </div>
-
-            <div class="hide-xs-down popup popup-bottom-left">
-                <i class="fa fa-user"></i> Test User
+            <div class="hide-xs-down popup popup-bottom-left"><i class="fa fa-user"></i> Test User
                 <ul>
+                    <li>
+                        <div class="grid inset-base"><img src="images/user.png"></div>
+                    </li>
                     <li><a href="#loginDialog"><i class="fa fa-wrench"></i> Preferences</a></li>
                     <li>
-                        <div>
-                            <a href="#"><i class="fa fa-power-off"></i> Logout</a>
-                        </div>
+                        <div><a href="#"><i class="fa fa-power-off"></i> Logout</a></div>
                     </li>
                 </ul>
-            </div>
-
-            <!-- hamburger menu -->
-            <div class="display-xs-down popup popup-bottom-left">
-                <i class="fa fa-bars"></i>
+            </div> <!-- hamburger menu -->
+            <div class="display-xs-down popup popup-bottom-left"><i class="fa fa-bars"></i>
                 <ul>
                     <li class="popup popup-left-down"><i class="fa fa-user"></i> Test User
                         <ul>
                             <li><i class="fa fa-wrench"></i> Preferences</li>
                             <li>
-                                <div>
-                                    <a href="#"><i class="fa fa-power-off"></i> Logout</a>
-                                </div>
+                                <div><a href="#"><i class="fa fa-power-off"></i> Logout</a></div>
                             </li>
                         </ul>
                     </li>
-                    <li class="popup popup-left-down">
-                        <i class="fa fa-question-circle"></i> About
+                    <li class="popup popup-left-down"><i class="fa fa-question-circle"></i> About
                         <ul>
                             <li><a href="#">Version information</a></li>
                             <li><a href="#">Legal information</a></li>
@@ -72,18 +86,15 @@
         </nav>
     </div>
 </div>
-
 <div class="wallpaper" style="background-image: url(images/wallpaper.jpg)">
     <div class="content-wrapper">
         <div class="page-title">Idx CSS Framework</div>
     </div>
 </div>
-
 <div class="navbar-light">
     <div class="content-wrapper">
-        <nav class="navbar navbar-small content">
-            <strong>FEATURES:</strong>
-            <a onclick="$('#content').load('examples/containers.html');">Containers</a>
+        <nav class="navbar navbar-small content"><strong>FEATURES:</strong> <a
+                onclick="$('#content').load('examples/containers.html');">Containers</a>
             <a onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
             <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
             <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
@@ -93,16 +104,12 @@
             <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
         </nav>
     </div>
-
 </div>
-
 <div class="content-wrapper">
     <div class="content">
         <div id="content"></div>
     </div>
-    <script>
-        $('#content').load('examples/containers.html');
-    </script>
+    <script> $('#content').load('examples/containers.html'); </script>
 </div>
 </body>
 </html>

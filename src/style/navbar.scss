@@ -1,27 +1,27 @@
 @import "theme-constants.scss";
 
 .navbar-light {
-  color: $nav-light-foreground;
-  background-color: $nav-light-background;
+  color: $light-foreground;
+  background-color: $light-background;
   a, a:active, a:visited, a:hover {
-    color: $nav-light-foreground;
+    color: $light-foreground;
   }
   .navbar, &.navbar {
     > a:hover, > div:hover {
-      background-color: $nav-light-background-hover;
+      background-color: $light-background-hover;
     }
   }
 }
 
 .navbar-dark {
-  color: $nav-dark-foreground;
-  background-color: $nav-dark-background;
+  color: $dark-foreground;
+  background-color: $dark-background;
   a, a:active, a:visited, a:hover {
-    color: $nav-dark-foreground;
+    color: $dark-foreground;
   }
   .navbar, &.navbar {
     > a:hover, > div:hover {
-      background-color: $nav-dark-background-hover;
+      background-color: $dark-background-hover;
     }
   }
 }
