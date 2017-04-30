@@ -26,6 +26,19 @@
   display: block;
 }
 
+.box {
+  display: flex;
+  flex-wrap: nowrap;
+
+  > * {
+    flex: 0 0 auto;
+  }
+}
+
+.box-content-stretch {
+  flex: 1 1 auto;
+}
+
 .inline-block {
   @extend .block;
   display: inline-block;

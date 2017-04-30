@@ -30,15 +30,16 @@ $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
 $font-size-base: 14px;
-$font-size-large: ceil($font-size-base * 2);
-$font-size-small: ceil($font-size-base * 0.8);
-$font-size-tiny: ceil($font-size-base * 0.7);
-$font-size-h1: 36px;
-$font-size-h2: 30px;
-$font-size-h3: 24px;
-$font-size-h4: 18px;
-$font-size-h5: 14px;
-$font-size-h6: 12px;
+$font-size-tiny: ceil($font-size-base* 9/13);
+$font-size-small: ceil($font-size-base* 11/13);
+$font-size-large: ceil($font-size-base* 24/13);
+$font-size-huge: ceil($font-size-base* 36/13);
+$font-size-h1: ceil($font-size-base* 36/13);
+$font-size-h2: ceil($font-size-base* 30/13);
+$font-size-h3: ceil($font-size-base* 24/13);
+$font-size-h4: ceil($font-size-base* 18/13);
+$font-size-h5: ceil($font-size-base* 14/13);
+$font-size-h6: ceil($font-size-base* 12/13);
 $font-size-page-title: 60px;
 $font-size-page-subtitle: 40px;
 
@@ -56,11 +57,11 @@ $primary: rgb(64, 81, 105);
 $dark: #3c424c;
 $light: #EEEEEE;
 $disabled: rgb(172, 165, 134);
-$blue: rgb(70, 130, 180);
+$blue: #3B91B4; //rgb(70, 130, 180);
 $green: rgb(150, 190, 10);
 $yellow: rgb(255, 201, 1); //(254,211,60);
-$orange: rgb(255, 144, 15); // rgb(251, 164, 0);
-$red: rgb(223, 40, 27); // rgb(220, 90, 50);
+$orange: #f79803; //rgb(255, 144, 15); // rgb(251, 164, 0);
+$red: #dc5a32; //rgb(223, 40, 27); // rgb(220, 90, 50);
 
 $colors: (
         dark: $dark,
@@ -124,12 +125,11 @@ $table-zebra-cell-background: #F7F7F7;
 $table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
-$grid-column-spacing: $spacing-small;
 
 // panels
 
 $light-background: $light;
-$light-background-hover:  darken($light-background, 10%);
+$light-background-hover: darken($light-background, 10%);
 $light-foreground: #666666;
 $light-divider-color: darken($light-background, 20%);
 
@@ -137,7 +137,6 @@ $dark-background: $dark;
 $dark-background-hover: darken($dark-background, 10%);
 $dark-foreground: #FFFFFF;
 $dark-divider-color: darken($dark-background, 20%);
-
 
 // cards
 $card-background: lighten($base-background, 20%);

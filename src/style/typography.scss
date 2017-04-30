@@ -12,13 +12,14 @@ body {
   font-weight: $title-font-weight;
   font-size: $font-size-page-title;
 }
+
 .page-subtitle {
   font-family: $title-font;
   font-weight: $title-font-weight;
   font-size: $font-size-page-subtitle;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
   color: $header-color;
   margin: $spacing-base 0;
@@ -48,6 +49,59 @@ h5, .h5 {
 h6, .h6 {
   font-size: $font-size-h6;
 }
+
+.text-tiny {
+  font-size: $font-size-tiny;
+}
+
+.text-small {
+  font-size: $font-size-small;
+}
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-large {
+  font-size: $font-size-large;
+}
+
+.text-huge {
+  font-size: $font-size-huge;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
 small {
   font-size: $font-size-small;
 }

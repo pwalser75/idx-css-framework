@@ -31,6 +31,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: space-between;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   padding: 0;
 

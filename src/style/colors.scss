@@ -17,6 +17,10 @@
 
     background-color: #{$color};
   }
+
+  .border-#{$name} {
+    border: 1px solid #{$color};
+  }
 }
 
 .background-lighten {

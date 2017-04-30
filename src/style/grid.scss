@@ -3,21 +3,33 @@
 .grid {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: stretch;
   align-content: stretch;
-  margin-rigth: $grid-column-spacing;
-  margin-left: -$grid-column-spacing;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+
+  &.grid-gutter {
+    margin-right: $spacing-base;
+    margin-left: -$spacing-base;
+
+    > * {
+      padding: 0 0 $spacing-base $spacing-base;
+    }
+  }
+  &.grid-gutter-small {
+    margin-right: $spacing-small;
+    margin-left: -$spacing-small;
+
+    > * {
+      padding: 0 0 $spacing-small $spacing-small;
+    }
+  }
 
   > * {
-    padding: 0 0 $grid-column-spacing $grid-column-spacing;
     position: relative;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  > * > * {
-    flex: 1 1 auto;
   }
 
   .align-fill {
