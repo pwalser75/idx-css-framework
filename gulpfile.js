@@ -2,9 +2,6 @@
 
 const gulp = require('gulp');
 const del = require('del');
-const merge = require('merge-stream');
-const mocha = require('gulp-mocha');
-const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const cssPrefixer = require('gulp-autoprefixer');
 const cssMinify = require('gulp-cssnano');
@@ -14,7 +11,6 @@ const cssConcat = require('gulp-concat-css');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
-const url = require('url');
 
 // Configuration
 
