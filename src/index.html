@@ -14,7 +14,8 @@
 <div class="header shadow-below background-dark">
     <div class="content-wrapper">
         <nav class="navbar-dark navbar">
-            <div><strong>IDX CSS Framework</strong></div>
+            <strong>IDX CSS Framework</strong>
+            <img src="images/computer.png" style="height: 36px; padding: 2px;">
             <span class="pull"></span>
             <div class="hide-xs-down popup popup-bottom-left">
                 Fancy popup content
@@ -95,8 +96,11 @@
 </div>
 <div class="navbar-light">
     <div class="content-wrapper">
-        <nav class="navbar navbar-small content"><strong>FEATURES:</strong> <a
-                onclick="$('#content').load('examples/containers.html');">Containers</a>
+        <nav class="navbar navbar-small content"><strong>FEATURES:</strong>
+            <div class="popup popup-bottom-right display-sm-down">
+                <i class="fa fa-bars"></i>
+            </div>
+            <a onclick="$('#content').load('examples/containers.html');">Containers</a>
             <a onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
             <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
             <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
