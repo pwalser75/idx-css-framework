@@ -1,9 +1,49 @@
 @import "theme-constants.scss";
 
 .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: default;
 
   > * {
-
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: $inset-small;
+    background: $list-item-background;
+    border-top: 1px solid $list-item-divider-color;
+  }
+  > *:first-child {
+    border: none;
   }
 
+  > *:hover {
+    background: $list-item-background-hover;
+  }
+
+  a > li {
+    margin: 0;
+  }
+
+  a, a:active, a:visited {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &.list-icons {
+    > * {
+      padding-left: 2.5em;
+
+      .list-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5em;
+        padding: $inset-small;
+      }
+    }
+  }
 }

@@ -16,14 +16,19 @@
   padding: $inset-large;
 }
 
-.tab {
-  margin-left: $spacing-large;
+.container {
+  margin: 0;
 }
 
 .block {
   margin-top: $spacing-base;
   margin-bottom: $spacing-base;
   display: block;
+}
+
+.inline-block {
+  @extend .block;
+  display: inline-block;
 }
 
 .box {
@@ -35,17 +40,12 @@
   }
 }
 
+.tab {
+  margin-left: $spacing-large;
+}
+
 .box-content-stretch {
   flex: 1 1 auto;
-}
-
-.inline-block {
-  @extend .block;
-  display: inline-block;
-}
-
-.container {
-  margin: 0;
 }
 
 .content {

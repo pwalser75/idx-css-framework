@@ -31,9 +31,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: space-between;
-  overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: middle;
+  max-width: 100%;
 
   padding: 0;
 
