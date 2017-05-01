@@ -30,8 +30,8 @@ $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
 $font-size-base: 14px;
-$font-size-tiny: ceil($font-size-base* 9/13);
-$font-size-small: ceil($font-size-base* 11/13);
+$font-size-tiny: $font-size-base* 9/13;
+$font-size-small: $font-size-base* 11/13;
 $font-size-large: ceil($font-size-base* 24/13);
 $font-size-huge: ceil($font-size-base* 36/13);
 $font-size-h1: ceil($font-size-base* 36/13);
@@ -81,25 +81,10 @@ $warning: $orange;
 $error: $red;
 $header-color: $primary;
 
+$separator-color: #AAAAAA;
+
 $transparent-lighten: rgba(255, 255, 255, 0.1);
 $transparent-darken: rgba(0, 0, 0, 0.1);
-
-// derived colors
-
-$disabled-dark: darken($disabled, 20%);
-$disabled-light: lighten($disabled, 20%);
-$primary-dark: darken($primary, 20%);
-$primary-light: lighten($primary, 20%);
-$blue-dark: darken($blue, 20%);
-$blue-light: lighten($blue, 20%);
-$green-dark: darken($green, 20%);
-$green-light: lighten($green, 20%);
-$yellow-dark: darken($yellow, 20%);
-$yellow-light: lighten($yellow, 20%);
-$orange-dark: darken($orange, 20%);
-$orange-light: lighten($orange, 20%);
-$red-dark: darken($red, 20%);
-$red-light: lighten($red, 20%);
 
 // metrics
 

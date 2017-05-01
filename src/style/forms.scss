@@ -1,6 +1,8 @@
 @import "theme-constants.scss";
 @import "material.scss";
 
+// Input styling
+
 input, textarea, select, option {
   padding: $inset-tiny;
   font-family: $base-font;
@@ -14,6 +16,45 @@ form.layout-table.key-value > * > label:first-child {
   padding-right: 1em;
 }
 
+// Input Fields
+.input-field {
+
+  margin: $spacing-base 0;
+
+  > * {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  > label:first-of-type {
+    font-size: $font-size-tiny;
+  }
+
+  > input, > .input, > select, > textarea {
+    font-weight: $font-weight-semi-bold;
+    padding: $spacing-tiny 0;
+    border: none;
+    border-bottom: 1px solid $separator-color;
+    background: none;
+  }
+  * > input, * > .input, * > select, * > textarea {
+    font-weight: $font-weight-semi-bold;
+    padding: $spacing-tiny 0;
+    border: none;
+    background: none;
+  }
+  > option, * > option {
+    padding: $spacing-tiny 0;
+  }
+  > .input-message {
+    font-size: $font-size-small;
+  }
+}
+
+// Buttons
+
 button, .button {
   @extend .material-shadow-2;
   padding: $inset-small;
@@ -25,7 +66,7 @@ button, .button {
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.4);
-  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.3) inset, 0 8px 4px rgba(255, 255, 255, 0.15) inset, 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.3) inset, 0 8px 4px rgba(255, 255, 255, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 
   &:active, &:hover {
     background-color: darken($light-background, 5%);
@@ -69,3 +110,4 @@ button, .button {
     }
   }
 }
+
