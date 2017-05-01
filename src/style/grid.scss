@@ -3,14 +3,12 @@
 .grid {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  align-content: stretch;
   flex-wrap: wrap;
   margin-right: 0;
   margin-left: 0;
   max-width: 100%;
 
-  &.grid-gutter {
+  &.gutter {
     margin-right: $spacing-base;
     margin-left: -$spacing-base;
     max-width: calc(100% + #{2*$spacing-base});
@@ -19,7 +17,7 @@
       padding: 0 0 $spacing-base $spacing-base;
     }
   }
-  &.grid-gutter-small {
+  &.gutter-small {
     margin-right: $spacing-small;
     margin-left: -$spacing-small;
     max-width: calc(100% + #{2*$spacing-small});

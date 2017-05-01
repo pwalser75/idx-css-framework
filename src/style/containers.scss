@@ -22,13 +22,12 @@
 
 .block {
   margin-top: $spacing-base;
-  margin-bottom: $spacing-base;
-  display: block;
+  display: block !important;;
 }
 
 .inline-block {
   @extend .block;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .box {
@@ -49,8 +48,7 @@
 }
 
 .content {
-  margin-left: $spacing-base;
-  margin-right: $spacing-base;
+  margin: 0 $spacing-base $spacing-base $spacing-base;
 }
 
 .content-wrapper {

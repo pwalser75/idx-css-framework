@@ -3,12 +3,11 @@
 @each $name, $color in $colors {
   .label-#{$name} {
     display: inline;
-    font-size: $font-size-tiny;
+    font-size: $font-size-tiny !important;
     font-weight: $font-weight-semi-bold;
     background: $color;
     border-radius: 0.25em;
     padding: $inset-tiny;
-    min-width: 2em;
     text-align: center;
     user-select: none;
 

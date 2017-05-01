@@ -20,29 +20,23 @@
             <div class="hide-xs-down popup popup-bottom-left">
                 Fancy popup content
                 <div class="popup-content inset-base" style="width: 400px">
-                    <div class="grid">
-                        <div class="col-4"><h2>First</h2> <img src="images/image1.jpg">
+                    <div class="layout-table">
+
+                        <div>
+                            <span><img src="images/image1.jpg"></span>
+                            <span><img src="images/image2.jpg"></span>
+                            <span><img src="images/image3.jpg"></span>
+                        </div>
+
+                        <div>
                             <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis, diam
-                                vitae tempus finibus, nunc ante molestie risus, vitae consectetur lorem tortor a urna.
-                                Fusce rutrum est dapibus mauris venenatis, at egestas metus viverra. Suspendisse a ex
-                                non est dignissim convallis non ut odio. Maecenas vitae lacinia ligula. Maecenas sed
-                                odio ac erat consectetur pretium ut at sem.
+                                vitae tempus finibus.
                             </small>
-                        </div>
-                        <div class="col-4"><h2>Second</h2> <img src="images/image2.jpg">
                             <small> Curabitur arcu mi, hendrerit nec risus quis, rhoncus viverra augue. Vestibulum quis
-                                felis sit amet mauris rhoncus vehicula. Donec pretium nibh vitae pulvinar pretium.
-                                Mauris eu dignissim risus, ac ornare tellus. Cras ac justo ut nulla fringilla sagittis
-                                at quis felis. Vestibulum semper, urna ac porta sagittis, quam ligula commodo metus, sit
-                                amet tincidunt justo ligula ut ex.
+                                felis sit amet mauris rhoncus vehicula.
                             </small>
-                        </div>
-                        <div class="col-4"><h2>Third</h2> <img src="images/image3.jpg">
                             <small>Vestibulum massa justo, dictum sollicitudin pretium id, malesuada vitae risus. Donec
-                                sollicitudin, justo a finibus hendrerit, turpis justo mollis neque, et vestibulum felis
-                                elit ut nisl. Aenean pretium porta mi vel feugiat. Ut tincidunt libero at felis iaculis,
-                                ut porta odio accumsan. Suspendisse sollicitudin pulvinar euismod. Vivamus quis eros in
-                                ex ullamcorper tincidunt.
+                                sollicitudin, justo a finibus hendrerit, turpis justo mollis.
                             </small>
                         </div>
                     </div>
@@ -97,17 +91,27 @@
 <div class="navbar-light">
     <div class="content-wrapper">
         <nav class="navbar navbar-small content"><strong>FEATURES:</strong>
-            <div class="popup popup-bottom-right display-sm-down">
-                <i class="fa fa-bars"></i>
-            </div>
             <a onclick="$('#content').load('examples/containers.html');">Containers</a>
             <a onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
-            <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
-            <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
-            <a onclick="$('#content').load('examples/cards.html');">Cards</a>
-            <a onclick="$('#content').load('examples/typography.html');">Typography</a>
-            <a onclick="$('#content').load('examples/tables.html');">Tables</a>
-            <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/responsive.html');">Responsive</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/grid.html');">Grid system</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/cards.html');">Cards</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/typography.html');">Typography</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/tables.html');">Tables</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
+            <a class="hide-md-down" onclick="$('#content').load('examples/forms.html');">Forms</a>
+            <div class="popup popup-bottom-right display-md-down">
+                <i class="fa fa-bars"></i> more features
+                <div class="popup-content list">
+                    <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
+                    <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
+                    <a onclick="$('#content').load('examples/cards.html');">Cards</a>
+                    <a onclick="$('#content').load('examples/typography.html');">Typography</a>
+                    <a onclick="$('#content').load('examples/tables.html');">Tables</a>
+                    <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
+                    <a onclick="$('#content').load('examples/forms.html');">Forms</a>
+                </div>
+            </div>
         </nav>
     </div>
 </div>
