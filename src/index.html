@@ -90,9 +90,10 @@
 </div>
 <div class="navbar-light">
     <div class="content-wrapper">
-        <nav class="navbar navbar-small content"><strong>FEATURES:</strong>
-            <a onclick="$('#content').load('examples/containers.html');">Containers</a>
-            <a onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
+        <nav class="navbar navbar-small content">
+            <strong class="hide-xs-down">FEATURES:</strong>
+            <a class="hide-xs-down" onclick="$('#content').load('examples/containers.html');">Containers</a>
+            <a class="hide-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
             <a class="hide-md-down" onclick="$('#content').load('examples/responsive.html');">Responsive</a>
             <a class="hide-md-down" onclick="$('#content').load('examples/grid.html');">Grid system</a>
             <a class="hide-md-down" onclick="$('#content').load('examples/cards.html');">Cards</a>
@@ -101,8 +102,12 @@
             <a class="hide-md-down" onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
             <a class="hide-md-down" onclick="$('#content').load('examples/forms.html');">Forms</a>
             <div class="popup popup-bottom-right display-md-down">
-                <i class="fa fa-bars"></i> more features
+                <i class="fa fa-bars"></i>
+                <span class="hide-xs-down">more features</span>
+                <span class="display-xs-down">FEATURES</span>
                 <div class="popup-content list">
+                    <a class="show-xs-down" onclick="$('#content').load('examples/containers.html');">Containers</a>
+                    <a class="show-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
                     <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
                     <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
                     <a onclick="$('#content').load('examples/cards.html');">Cards</a>

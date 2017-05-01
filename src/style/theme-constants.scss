@@ -23,13 +23,13 @@ $media-xl-min: $media-xl;
 $base-font: 'Open Sans', sans-serif;
 $title-font: 'Kalam', sans-serif;
 $header-font: 'Bitter', sans-serif;
-$code-font: 'Consolas', monospace;
+$code-font: 'Source Code Pro','Consolas', monospace;
 
 $title-font-weight: 700;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
-$font-size-base: 13px;
+$font-size-base: 14px;
 $font-size-tiny: ceil($font-size-base* 9/13);
 $font-size-small: ceil($font-size-base* 11/13);
 $font-size-large: ceil($font-size-base* 24/13);

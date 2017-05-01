@@ -10,6 +10,7 @@
     padding: $inset-tiny;
     text-align: center;
     user-select: none;
+    white-space: nowrap;
 
     @if $name == 'dark' {
       color: $dark-foreground;

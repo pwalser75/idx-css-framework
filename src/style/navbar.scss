@@ -3,26 +3,27 @@
 .navbar-light {
   color: $light-foreground;
   background-color: $light-background;
-  a, a:active, a:visited, a:hover {
-    color: $light-foreground;
-  }
+
   .navbar, &.navbar {
     > a:hover, > div:hover {
       background-color: $light-background-hover;
     }
+  }
+  .popup-content {
+    color: $nav-popup-foreground;
   }
 }
 
 .navbar-dark {
   color: $dark-foreground;
   background-color: $dark-background;
-  a, a:active, a:visited, a:hover {
-    color: $dark-foreground;
-  }
   .navbar, &.navbar {
     > a:hover, > div:hover {
       background-color: $dark-background-hover;
     }
+  }
+  .popup-content {
+    color: $nav-popup-foreground;
   }
 }
 
@@ -43,6 +44,9 @@
   }
   .pull:hover {
     cursor: default;
+  }
+  a, a:active, a:visited, a:hover {
+    color: inherit;
   }
 
   > * {

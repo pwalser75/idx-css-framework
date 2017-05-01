@@ -8,7 +8,6 @@
   > ul, > .popup-content {
     background: $nav-popup-background;
     color: $nav-popup-foreground;
-    font-size: $font-size-base;
     margin: 0;
     position: absolute;
     z-index: 999;
@@ -20,28 +19,6 @@
     max-width: 80vw;
     max-height: 80vh;
     box-shadow: 3px 3px 6px $shadow-color;
-  }
-
-  > ul {
-    padding: 0;
-    list-style: none;
-    white-space: nowrap;
-  }
-
-  > ul > li {
-    display: block;
-    padding: $inset-small;
-    position: relative;
-    border-bottom: 1px solid $nav-popup-divider-color;
-    text-overflow: ellipsis;
-
-    a, a:active, a:visited, a:hover {
-      color: $nav-popup-foreground;
-    }
-  }
-
-  ul li:hover {
-    background: $nav-popup-background-hover;
   }
 }
 

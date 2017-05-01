@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i|Bitter|Kalam:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i|Bitter|Kalam:400,700|Source+Code+Pro:400,700');
 @import "theme-constants.scss";
 
 body {
@@ -108,4 +108,6 @@ small {
 
 code {
   font-family: $code-font;
+  background-color: $light-background;
+  padding: $inset-tiny;
 }

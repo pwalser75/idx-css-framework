@@ -1,27 +1,63 @@
 <h1>Forms</h1>
 
-<form class="layout-table" style="width:500px">
+<form class="layout-table key-value" style="width:500px">
 
     <div>
         <label>E-Mail:</label>
-        <input type="text" placeholder="please enter your e-mail address">
+        <input type="text" size="20"placeholder="please enter your e-mail address">
     </div>
     <div>
         <label>Password:</label>
-        <input type="password" placeholder="please enter your password">
+        <input type="password" size="20" placeholder="please enter your password">
     </div>
     <div>
-        <div></div>
+        <label>Birth date</label>
+        <div>
+            <input name="day" size="2" placeholder="Day" type="text">
+            <select name="month" placeholder="Month">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <input name="year" size="4" placeholder="Year" type="text">
+        </div>
+    </div>
+    <div>
+        <label></label>
         <label>
             <input type="checkbox"> Checkbox
         </label>
     </div>
     <div>
-        <div></div>
+        <label>Comment:</label>
+        <textarea rows="4" cols="50">Lorem ispum</textarea>
+    </div>
+    <div>
+        <label></label>
         <div>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
         </div>
     </div>
-
 </form>
+
+<h1>Buttons</h1>
+
+<button class="button-primary">Primary</button>
+<button class="button-dark">Dark</button>
+<button class="button-light">Light</button>
+<button class="button-disabled">Disabled</button>
+<button class="button-blue">Blue</button>
+<button class="button-green">Green</button>
+<button class="button-yellow">Yellow</button>
+<button class="button-orange">Orange</button>
+<button class="button-red">Red</button>

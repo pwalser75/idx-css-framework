@@ -1,0 +1,71 @@
+@import "theme-constants.scss";
+@import "material.scss";
+
+input, textarea, select, option {
+  padding: $inset-tiny;
+  font-family: $base-font;
+  font-size: $font-size-base;
+}
+
+form.layout-table.key-value > * > label:first-child {
+  text-align: right;
+  vertical-align: top;
+  font-weight: $font-weight-bold;
+  padding-right: 1em;
+}
+
+button, .button {
+  @extend .material-shadow-2;
+  padding: $inset-small;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: $font-weight-bold;
+  background-color: $light-background;
+  color: $light-foreground;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.3) inset, 0 8px 4px rgba(255, 255, 255, 0.15) inset, 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  &:active, &:hover {
+    background-color: darken($light-background, 5%);
+  }
+
+  &:active {
+    transform: translate(1px, 1px);
+  }
+}
+
+@each $name, $color in $colors {
+
+  .button-#{$name} {
+    @if $name == 'dark' {
+      color: $dark-foreground;
+    } @else if $name == 'light' {
+      color: $light-foreground;
+    } @else {
+      color: white;
+    }
+
+    background-color: #{$color};
+  }
+
+  @if $name != 'disabled' {
+    .button-#{$name}:hover, .button-#{$name}:active {
+      background-color: darken($color, 5%);
+    }
+    .button-#{$name}:active {
+      box-shadow: 0 1px 0px rgba(255, 255, 255, 0.3) inset, 0 8px 4px rgba(255, 255, 255, 0.15) inset;
+      transform: translate(1px, 1px);
+    }
+  }
+
+  @if $name == 'disabled' {
+    .button-#{$name}:hover, .button-#{$name}:active {
+      background-color: $color;
+    }
+    .button-#{$name}:active {
+
+    }
+  }
+}
