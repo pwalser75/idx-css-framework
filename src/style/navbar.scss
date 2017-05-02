@@ -4,26 +4,21 @@
   color: $light-foreground;
   background-color: $light-background;
 
-  .navbar, &.navbar {
-    > a:hover, > div:hover {
+  .nav-item {
+    &:hover, &.active {
       background-color: $light-background-hover;
     }
-  }
-  .popup-content {
-    color: $nav-popup-foreground;
   }
 }
 
 .navbar-dark {
   color: $dark-foreground;
   background-color: $dark-background;
-  .navbar, &.navbar {
-    > a:hover, > div:hover {
+
+  .nav-item {
+    &:hover, &.active {
       background-color: $dark-background-hover;
     }
-  }
-  .popup-content {
-    color: $nav-popup-foreground;
   }
 }
 
@@ -35,29 +30,33 @@
   text-overflow: ellipsis;
   vertical-align: middle;
   max-width: 100%;
-
   padding: 0;
 
-  .pull {
-    display: inline;
-    flex: 1 1 auto;
-  }
-  .pull:hover {
-    cursor: default;
-  }
-  a, a:active, a:visited, a:hover {
-    color: inherit;
+  .nav-group {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 
-  > * {
+  > *, .nav-item  {
     padding: $inset-base;
     display: inline-block;
     flex: 0 0 auto;
     position: relative;
+    vertical-align: middle;
+  }
+
+  .pull {
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+
+  .nav-item {
     cursor: pointer;
   }
 
-  a, a:active, a:visited {
+  a, a:active, a:visited, a:hover {
+    color: inherit;
     font-weight: normal;
     text-decoration: none;
     cursor: pointer;
@@ -70,12 +69,13 @@
 }
 
 .navbar-small {
-  > * {
+  > *, .nav-item  {
     padding: $inset-small;
   }
 }
+
 .navbar-large {
-  > * {
+  > *, .nav-item  {
     padding: $inset-large;
   }
 }

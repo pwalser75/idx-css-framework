@@ -93,3 +93,28 @@
     right: auto;
   }
 }
+.popup-menu-left {
+  > ul, > .popup-content {
+    top: 100%;
+    left: auto;
+    right: 0;
+  }
+  > ul ul, > .popup-content .popup-content, ul .popup-content, .popup-content ul {
+    top: 0;
+    left: auto;
+    right: 100%;
+  }
+}
+
+.popup-menu-right {
+  > ul, > .popup-content {
+    top: 100%;
+    left: 0;
+    right: auto;
+  }
+  > ul ul, > .popup-content .popup-content, ul .popup-content, .popup-content ul {
+    top: 0;
+    left: 100%;
+    right: auto;
+  }
+}

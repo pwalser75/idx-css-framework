@@ -7,6 +7,7 @@ input, textarea, select, option {
   padding: $inset-tiny;
   font-family: $base-font;
   font-size: $font-size-base;
+  color: $input-color;
 }
 
 form.layout-table.key-value > * > label:first-child {
@@ -16,6 +17,10 @@ form.layout-table.key-value > * > label:first-child {
   padding-right: 1em;
 }
 
+option:disabled {
+  display: none;
+}
+
 // Input Fields
 .input-field {
 
@@ -23,21 +28,25 @@ form.layout-table.key-value > * > label:first-child {
 
   > * {
     display: block;
+    overflow: hidden;
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   > label:first-of-type {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: $font-size-tiny;
   }
 
   > input, > .input, > select, > textarea {
     font-weight: $font-weight-semi-bold;
-    padding: $spacing-tiny 0;
+    padding: $spacing-tiny;
     border: none;
     border-bottom: 1px solid $separator-color;
-    background: none;
+    background: rgba(0, 0, 0, 0.05);
   }
   * > input, * > .input, * > select, * > textarea {
     font-weight: $font-weight-semi-bold;
@@ -45,11 +54,55 @@ form.layout-table.key-value > * > label:first-child {
     border: none;
     background: none;
   }
-  > option, * > option {
-    padding: $spacing-tiny 0;
+  select, option {
+    padding: 0;
   }
   > .input-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: $font-size-small;
+  }
+}
+
+.input-field.success {
+  > input, > .input, > select, > textarea {
+    border-color: $success;
+  }
+  > label:first-of-type, > .input-message {
+    color: $success;
+  }
+}
+
+.input-field.error {
+  > input, > .input, > select, > textarea {
+    border-color: $error;
+  }
+
+  > label:first-of-type, > .input-message {
+    color: $error;
+  }
+}
+
+.input-field.warning {
+
+  > input, > .input, > select, > textarea {
+    border-color: $warning;
+  }
+
+  > label:first-of-type, > .input-message {
+    color: $warning;
+  }
+}
+
+.input-field.info {
+
+  > input, > .input, > select, > textarea {
+    border-color: $info;
+  }
+
+  > label:first-of-type, > .input-message {
+    color: $info;
   }
 }
 
@@ -106,7 +159,12 @@ button, .button {
       background-color: $color;
     }
     .button-#{$name}:active {
-
+      box-shadow: inherit !important;
+    }
+    button:disabled {
+      background-color: $color;
+      color: white;
+      cursor: not-allowed;
     }
   }
 }

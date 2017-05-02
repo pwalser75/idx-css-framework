@@ -21,27 +21,25 @@ $media-xl-min: $media-xl;
 // Typography
 
 $base-font: 'Open Sans', sans-serif;
-$title-font: 'Kalam', sans-serif;
+$title-font: 'Bitter', sans-serif;
 $header-font: 'Bitter', sans-serif;
-$code-font: 'Source Code Pro','Consolas', monospace;
+$code-font: 'Source Code Pro', 'Consolas', monospace;
 
 $title-font-weight: 700;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
 $font-size-base: 14px;
-$font-size-tiny: $font-size-base* 9/13;
-$font-size-small: $font-size-base* 11/13;
-$font-size-large: ceil($font-size-base* 24/13);
-$font-size-huge: ceil($font-size-base* 36/13);
-$font-size-h1: ceil($font-size-base* 36/13);
-$font-size-h2: ceil($font-size-base* 30/13);
-$font-size-h3: ceil($font-size-base* 24/13);
-$font-size-h4: ceil($font-size-base* 18/13);
-$font-size-h5: ceil($font-size-base* 14/13);
-$font-size-h6: ceil($font-size-base* 12/13);
-$font-size-page-title: 60px;
-$font-size-page-subtitle: 40px;
+$font-size-tiny: $font-size-base* 11/14;
+$font-size-small: $font-size-base* 12/14;
+$font-size-large: ceil($font-size-base* 24/14);
+$font-size-huge: ceil($font-size-base* 36/14);
+$font-size-h1: ceil($font-size-base* 36/14);
+$font-size-h2: ceil($font-size-base* 30/14);
+$font-size-h3: ceil($font-size-base* 24/14);
+$font-size-h4: ceil($font-size-base* 18/14);
+$font-size-h5: ceil($font-size-base* 14/14);
+$font-size-h6: ceil($font-size-base* 12/14);
 
 $line-height: $sqrt2;
 
@@ -63,6 +61,11 @@ $yellow: rgb(255, 201, 1);
 $orange: #f79803;
 $red: #d74943;
 
+$info: $blue;
+$success: $green;
+$warning: $orange;
+$error: $red;
+
 $colors: (
         dark: $dark,
         light: $light,
@@ -72,31 +75,34 @@ $colors: (
         green: $green,
         yellow: $yellow,
         orange: $orange,
-        red: $red
+        red: $red,
+        info: $info,
+        success: $success,
+        warning: $warning,
+        error: $error
 );
 
-$info: $blue;
-$success: $green;
-$warning: $orange;
-$error: $red;
 $header-color: $primary;
+$input-color: #111122;
 
-$separator-color: #AAAAAA;
+$separator-color: #CCCCCC;
 
 $transparent-lighten: rgba(255, 255, 255, 0.1);
 $transparent-darken: rgba(0, 0, 0, 0.1);
 
 // metrics
 
-$spacing-base: 10px;
+$spacing-base: 12px;
 $spacing-small: 6px;
 $spacing-tiny: 3px;
-$spacing-large: 20px;
+$spacing-large: 24px;
+$spacing-huge: 48px;
 
-$inset-base: $spacing-base ceil($spacing-base*$golden-ratio);
-$inset-small: $spacing-small ceil($spacing-small*$golden-ratio);
-$inset-large: $spacing-large ceil($spacing-large*$golden-ratio);
-$inset-tiny: $spacing-tiny ceil($spacing-tiny*$golden-ratio);
+$inset-base: $spacing-base;
+$inset-small: $spacing-small;
+$inset-large: $spacing-large;
+$inset-tiny: $spacing-tiny;
+$inset-huge: $spacing-huge;
 
 // table
 $table-separator-color: #CCCCCC;

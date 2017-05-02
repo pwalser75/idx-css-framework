@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i|Bitter|Kalam:400,700|Source+Code+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700,700i|Permanent+Marker|Bitter:400,700|Source+Code+Pro:400,700');
 @import "theme-constants.scss";
 
 body {
@@ -7,17 +7,6 @@ body {
   font-size: $font-size-base;
 }
 
-.page-title {
-  font-family: $title-font;
-  font-weight: $title-font-weight;
-  font-size: $font-size-page-title;
-}
-
-.page-subtitle {
-  font-family: $title-font;
-  font-weight: $title-font-weight;
-  font-size: $font-size-page-subtitle;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font;
@@ -107,7 +96,26 @@ small {
 }
 
 code {
+  color: $dark;
   font-family: $code-font;
+  font-size: $font-size-small;
   background-color: $light-background;
   padding: $inset-tiny;
+}
+
+.text-columns-2 {
+  column-count: 2;
+}
+
+.text-columns-3 {
+  column-count: 3;
+}
+
+.text-columns-4 {
+  column-count: 4;
+}
+
+.text-columns-2, .text-columns-3, .text-columns-4 {
+  column-width: 250px;
+  column-gap: $spacing-large;
 }

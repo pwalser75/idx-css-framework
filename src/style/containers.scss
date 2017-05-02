@@ -16,8 +16,16 @@
   padding: $inset-large;
 }
 
+.inset-huge {
+  padding: $inset-huge;
+}
+
 .container {
   margin: 0;
+}
+
+.content {
+  padding: $inset-base;
 }
 
 .block {
@@ -45,10 +53,6 @@
 
 .box-content-stretch {
   flex: 1 1 auto;
-}
-
-.content {
-  margin: 0 $spacing-base $spacing-base $spacing-base;
 }
 
 .content-wrapper {

@@ -2,15 +2,18 @@
 
 @each $name, $color in $colors {
   .label-#{$name} {
-    display: inline;
+    display: inline-block;
     font-size: $font-size-tiny !important;
     font-weight: $font-weight-semi-bold;
     background: $color;
     border-radius: 0.25em;
     padding: $inset-tiny;
-    text-align: center;
     user-select: none;
     white-space: nowrap;
+    min-width: 2em;
+    min-height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
 
     @if $name == 'dark' {
       color: $dark-foreground;

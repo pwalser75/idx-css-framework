@@ -43,38 +43,32 @@
     }
   }
 
-  @media only screen and (min-width: $media-lg-min) and (max-width: $media-lg-max) {
-    // 6 columns
-
-    @for $i from 1 through 6 {
-      .col-#{$i*2-1}, .col-#{$i*2} {
-        flex: 0 0 100% * $i/6;
+  @media only screen and (max-width: $media-lg-max) {
+    @for $i from 1 through 12 {
+      .col-lg-#{$i} {
+        flex: 0 0 100% * $i/12;
       }
     }
   }
-  @media only screen and (min-width: $media-md-min) and (max-width: $media-md-max) {
-    // 3 columns
-
-    @for $i from 1 through 3 {
-      .col-#{$i*4-3}, .col-#{$i*4-2}, .col-#{$i*4-1}, .col-#{$i*4} {
-        flex: 0 0 100% * $i/3;
+  @media only screen and (max-width: $media-md-max) {
+    @for $i from 1 through 12 {
+      .col-md-#{$i} {
+        flex: 0 0 100% * $i/12;
       }
     }
   }
-  @media only screen and (min-width: $media-sm-min) and (max-width: $media-sm-max) {
-    // 2 columns
-
-    @for $i from 1 through 2 {
-      .col-#{$i*6-5}, .col-#{$i*6-4}, .col-#{$i*6-3}, .col-#{$i*6-2}, .col-#{$i*6-1}, .col-#{$i*6} {
-        flex: 0 0 100% * $i/2;
+  @media only screen and (max-width: $media-sm-max) {
+    @for $i from 1 through 12 {
+      .col-sm-#{$i} {
+        flex: 0 0 100% * $i/12;
       }
     }
   }
   @media only screen and (max-width: $media-xs-max) {
-    // 1 column
-
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-      flex: 0 0 100%;
+    @for $i from 1 through 12 {
+      .col-xs-#{$i} {
+        flex: 0 0 100% * $i/12;
+      }
     }
   }
 }

@@ -38,20 +38,24 @@ ul {
   list-style-type: square;
 }
 
+ul, ol {
+  padding-left: 2em;
+  margin: 0;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  padding-left: 1em;
+}
+
 a[onclick] {
   cursor: pointer;
 }
 
-.wallpaper {
-  background-size: cover;
-  background-position: 100% 30%;
-  box-shadow: inset 0 -5px 5px 0 rgba(0, 0, 0, 0.6), inset 0 5px 5px 0 rgba(0, 0, 0, 0.6);
-  color: white;
-  text-shadow: 0 0 20px black;
-  padding: $inset-base;
-  margin: 0;
-}
-
-.shadow-below {
-  box-shadow: 0 0 2px 2px $shadow-color;
+a.undecorated {
+  &, &:active, &:visited, &:hover {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }

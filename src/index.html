@@ -17,8 +17,8 @@
             <strong>IDX CSS Framework</strong>
             <img src="images/computer.png" style="height: 36px; padding: 2px;">
             <span class="pull"></span>
-            <div class="hide-xs-down popup popup-bottom-left">
-                Fancy popup content
+            <div class="nav-item hide-xs-down popup popup-bottom-left">
+                <i class="fa fa-sitemap"></i>
                 <div class="popup-content inset-base" style="width: 400px">
                     <div class="layout-table">
 
@@ -42,40 +42,53 @@
                     </div>
                 </div>
             </div>
-            <div><a href="#"><i class="fa fa-home"></i> <span class="hide-sm-down ">Home</span></a></div>
-            <div class="hide-xs-down popup popup-bottom-right">
-                <i class="fa fa-question-circle"></i> <span class="hide-sm-down ">About</span>
-                <ul class="popup-content list">
-                    <li><a href="#">Version information</a></li>
-                    <li><a href="#">Legal information</a></li>
-                </ul>
-            </div>
-            <div class="hide-xs-down popup popup-bottom-left">
+            <span class="nav-group">
+                <a class="nav-item" href="#"><i class="fa fa-home"></i> <span class="hide-sm-down ">Home</span></a>
+                <span class="nav-item hide-xs-down popup popup-bottom-right">
+                    <i class="fa fa-question-circle"></i> <span class="hide-sm-down ">About</span>
+                    <ul class="popup-content list">
+                        <a href="#"><li>Version information</li></a>
+                        <a href="#"><li>Legal information</li></a>
+                    </ul>
+                </span>
+            </span>
+            <div class="nav-item hide-xs-down popup popup-bottom-left">
                 <i class="fa fa-user"></i> Test User
                 <ul class="popup-content list">
                     <li>
                         <div class="grid inset-base"><img src="images/user.png"></div>
                     </li>
-                    <li><a href="#loginDialog"><i class="fa fa-wrench"></i> Preferences</a></li>
-                    <li>
-                        <div><a href="#"><i class="fa fa-power-off"></i> Logout</a></div>
-                    </li>
+                    <a href="#loginDialog">
+                        <li><i class="fa fa-wrench"></i> Preferences</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <div><i class="fa fa-power-off"></i> Logout</div>
+                        </li>
+                    </a>
                 </ul>
             </div> <!-- hamburger menu -->
             <div class="display-xs-down popup popup-bottom-left"><i class="fa fa-bars"></i>
-                <ul>
+                <ul class="list">
                     <li class="popup popup-left-down"><i class="fa fa-user"></i> Test User
                         <ul class="popup-content list">
-                            <li><i class="fa fa-wrench"></i> Preferences</li>
                             <li>
-                                <div><a href="#"><i class="fa fa-power-off"></i> Logout</a></div>
+                                <div class="grid inset-base"><img src="images/user.png"></div>
                             </li>
+                            <a href="#loginDialog">
+                                <li><i class="fa fa-wrench"></i> Preferences</li>
+                            </a>
+                            <a href="#">
+                                <li>
+                                    <div><i class="fa fa-power-off"></i> Logout</div>
+                                </li>
+                            </a>
                         </ul>
                     </li>
                     <li class="popup popup-left-down"><i class="fa fa-question-circle"></i> About
                         <ul class="popup-content list">
-                            <li><a href="#">Version information</a></li>
-                            <li><a href="#">Legal information</a></li>
+                            <a href="#"><li>Version information</li></a>
+                            <a href="#"><li>Legal information</li></a>
                         </ul>
                     </li>
                 </ul>
@@ -83,37 +96,45 @@
         </nav>
     </div>
 </div>
-<div class="wallpaper" style="background-image: url(images/wallpaper.jpg)">
+<div class="wallpaper shadow-inner" style="background-image: url(images/wallpaper.jpg)">
     <div class="content-wrapper">
-        <div class="page-title">Idx CSS Framework</div>
+        <div class="page-title content">
+            <h6>Idx CSS Framework</h6>
+            <h1>Showcase</h1>
+        </div>
     </div>
 </div>
 <div class="navbar-light">
     <div class="content-wrapper">
         <nav class="navbar navbar-small content">
             <strong class="hide-xs-down">FEATURES:</strong>
-            <a class="hide-xs-down" onclick="$('#content').load('examples/containers.html');">Containers</a>
-            <a class="hide-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/responsive.html');">Responsive</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/grid.html');">Grid system</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/cards.html');">Cards</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/typography.html');">Typography</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/tables.html');">Tables</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
-            <a class="hide-md-down" onclick="$('#content').load('examples/forms.html');">Forms</a>
+            <a class="nav-item hide-xs-down" onclick="$('#content').load('examples/containers.html');">Containers</a>
+            <a class="nav-item hide-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/responsive.html');">Responsive</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/grid.html');">Grid system</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/cards.html');">Cards</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/typography.html');">Typography</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/components.html');">Components</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/tables.html');">Tables</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars,
+                popups and menus</a>
+            <a class="nav-item hide-md-down" onclick="$('#content').load('examples/forms.html');">Forms</a>
             <div class="popup popup-bottom-right display-md-down">
                 <i class="fa fa-bars"></i>
                 <span class="hide-xs-down">more features</span>
                 <span class="display-xs-down">FEATURES</span>
                 <div class="popup-content list">
                     <a class="show-xs-down" onclick="$('#content').load('examples/containers.html');">Containers</a>
-                    <a class="show-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp; Colors</a>
+                    <a class="show-xs-down" onclick="$('#content').load('examples/labels_colors.html');">Labels &amp;
+                        Colors</a>
                     <a onclick="$('#content').load('examples/responsive.html');">Responsive</a>
                     <a onclick="$('#content').load('examples/grid.html');">Grid system</a>
                     <a onclick="$('#content').load('examples/cards.html');">Cards</a>
                     <a onclick="$('#content').load('examples/typography.html');">Typography</a>
+                    <a onclick="$('#content').load('examples/components.html');">Components</a>
                     <a onclick="$('#content').load('examples/tables.html');">Tables</a>
-                    <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and menus</a>
+                    <a onclick="$('#content').load('examples/toolbars_popups_menus.html');">Toolbars, popups and
+                        menus</a>
                     <a onclick="$('#content').load('examples/forms.html');">Forms</a>
                 </div>
             </div>

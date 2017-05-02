@@ -95,6 +95,7 @@ gulp.task('watch', ['build'], () => {
 gulp.task('server', ['watch'], () => {
 
 	browserSync.init({
+		port : 4000,
 		server: {
 			baseDir: config.target
 		}
