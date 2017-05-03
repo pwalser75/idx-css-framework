@@ -52,11 +52,20 @@
 
 .zoom {
   display: inline-block;
-  transition: all 0.2s ease-out;
+  transition: all 0.15s ease-out;
 
   &:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+  }
+  &.low:hover {
+    transform: scale(1.1);
+  }
+  &.medium:hover {
     transform: scale(1.2);
-    transition: all 0.4s ease-out;
+  }
+  &.high:hover {
+    transform: scale(1.5);
   }
 }
 
