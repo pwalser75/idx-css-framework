@@ -15,6 +15,8 @@
 - **Form field inputs**: modern approach to form styling.
 - ...and many more, check out the **Showcase** (included) to learn about all the features.
 
+![Input Fields](input-fields.png)
+
 ## Setup (Node and NPM)
 This project requires Node.js for the build process (download 'latest' from https://nodejs.org).
 
