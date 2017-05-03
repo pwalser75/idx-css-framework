@@ -94,6 +94,66 @@ The
     <img class="image-contain" src="images/image3.jpg">
 </div>
 
+<h3>Media containers</h3>
+
+Media containers are full-width containers with a <b>fixed aspect ratio</b>. This allows to properly resize media (images, videos) in <i>liquid</i> layouts.
+<p>
+<div class="grid gutter">
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>square aspect, CD covers</strong><br>
+        <code>media aspectSquare</code>
+        <div class="media aspectSquare">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>4:3 aspect, TV</strong><br>
+        <code>media aspect4to3</code>
+        <div class="media aspect4to3">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>16:9 aspect, widescreen video</strong><br>
+        <code>media aspect16to9</code>
+        <div class="media aspect16to9">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+</div>
+<div class="grid gutter">
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>21:9 aspect, ultra-widescreen video</strong><br>
+        <code>media aspect21to9</code>
+        <div class="media aspect21to9">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>27:40 aspect, movie posters</strong><br>
+        <code>media aspect27to40</code>
+        <div class="media aspect27to40">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>DIN portrait aspect (1:sqrt(2)), documents</strong><br>
+        <code>media aspectDinPortrait</code>
+        <div class="media aspectDinPortrait">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+    <div class="col-2 col-md-3 col-sm-6">
+        <strong>DIN landscape aspect (sqrt(2):1), documents</strong><br>
+        <code>media aspectDinLandscape</code>
+        <div class="media aspectDinLandscape">
+            <img class="image-contain" src="images/image1.jpg">
+        </div>
+    </div>
+
+
+</div>
+
 <h3>Zoom effects</h3>
 Add the <code class="zoom">zoom</code> class to any component to add a zoom effect when hovering.
 <p>
