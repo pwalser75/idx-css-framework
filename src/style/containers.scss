@@ -60,3 +60,54 @@
   margin: 0 auto;
   max-width: $media-xl;
 }
+
+.content-relative {
+  position: relative;
+
+  > * {
+    margin: 0 !important;
+    display: inline-block;
+    position: absolute;
+  }
+
+  .top-left {
+    top: 0; left: 0;
+  }
+
+  .top-center {
+    top: 0; left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .top-right {
+    top: 0; right: 0;
+  }
+
+  .center-left {
+    top: 50%; left: 0;
+    transform: translate(0,-50%);
+  }
+
+  .center {
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .center-right {
+    top: 50%; right: 0;
+    transform: translate(0,-50%);
+  }
+
+  .bottom-left {
+    bottom: 0; left: 0;
+  }
+
+  .bottom-center {
+    bottom: 0; left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .bottom-right {
+    bottom: 0; right: 0;
+  }
+}

@@ -74,17 +74,13 @@ The
 <code>image-fill</code> class will make sure the image fills its bounds by centering, scaling and cropping it, no matter the aspect ratio.
 <br>
 The
-<code>image-border</code> class, if added to a component which contains the image, adds a nice 'photo' border and shadow.<br>
-Wrapping the image with a container with <code>image-container-zoom</code> adds a nice zoom-effect when hovering it.
+<code>image-border</code> class, if added to a component which contains the image, adds a nice 'photo' border and shadow.
 <p>
-
-<a href="">
-    <div class="image-border" style="width: 300px; height: 200px">
-        <div class="image-container-zoom">
+    <a href="">
+        <div class="image-border" style="width: 300px; height: 200px">
             <img class="image-contain" src="images/image3.jpg">
         </div>
-    </div>
-</a>
+    </a>
 <div class="image-border" style="width: 200px; height: 200px">
     <img class="image-contain" src="images/image3.jpg">
 </div>
@@ -96,4 +92,37 @@ Wrapping the image with a container with <code>image-container-zoom</code> adds 
 </div>
 <div class="image-border" style="width: 100px; height: 100px">
     <img class="image-contain" src="images/image3.jpg">
+</div>
+
+<h3>Zoom effects</h3>
+Add the <code class="zoom">zoom</code> class to any component to add a zoom effect when hovering.
+<p>
+<div class="image-border zoom" style="width: 240px; height: 200px">
+    <img class="image-contain" src="images/image1.jpg">
+</div>
+<div class="image-border zoom" style="width: 240px; height: 200px">
+    <img class="image-contain" src="images/image2.jpg">
+</div>
+<div class="image-border zoom" style="width: 240px; height: 200px">
+    <img class="image-contain" src="images/image3.jpg">
+</div>
+<p>
+
+    Use a container with <code>zoom-inside</code> to add an internal zoom effect when hovering.
+<p>
+<div class="image-border" style="width: 240px; height: 200px">
+    <div class="zoom-inside">
+        <img class="image-contain" src="images/image4.jpg">
+    </div>
+</div>
+<div class="image-border" style="width: 240px; height: 200px">
+    <div class="zoom-inside">
+        <img class="image-contain" src="images/image5.jpg">
+    </div>
+</div>
+</div>
+<div class="image-border" style="width: 240px; height: 200px">
+    <div class="zoom-inside">
+        <img class="image-contain" src="images/image6.jpg">
+    </div>
 </div>

@@ -3,27 +3,27 @@
 <h3>Insets</h3>
 
 <div class="background-light border-dark inline-block inset-tiny">
-    <div class="background-dark inset-tiny">
+    <div class="background-primary inset-tiny">
         inset-tiny
     </div>
 </div>
 <div class="background-light border-dark inline-block inset-small">
-    <div class="background-dark inset-small">
+    <div class="background-primary inset-small">
         inset-small
     </div>
 </div>
 <div class="background-light border-dark inline-block inset-base">
-    <div class="background-dark inset-base">
+    <div class="background-primary inset-base">
         inset-base
     </div>
 </div>
 <div class="background-light border-dark inline-block inset-large">
-    <div class="background-dark inset-large">
+    <div class="background-primary inset-large">
         inset-large
     </div>
 </div>
 <div class="background-light border-dark inline-block inset-huge">
-    <div class="background-dark inset-huge">
+    <div class="background-primary inset-huge">
         inset-huge
     </div>
 </div>
@@ -43,5 +43,42 @@ Use the <code>table-layout</code> class on a container, to format it as a
         <div class="background-primary inset-base">Cell content</div>
         <div class="background-primary inset-base">adapts</div>
         <div class="background-primary inset-base">automatically</div>
+    </div>
+</div>
+
+<h3>Content alignment</h3>
+Use the <code>content-relative</code> class on a container, and the
+<code>top-left</code>, <code>top-center</code>, <code>top-right</code>,
+<code>center-left</code>, <code>center</code>, <code>center-right</code>,
+<code>bottom-left</code>, <code>bottom-center</code>, <code>bottom-right</code> classes on the children to align them within the container:
+<p>
+
+<div class="background-light border-dark inline-block content-relative" style="width: 300px; height: 200px">
+    <div class="background-primary inset-base top-left text-small">
+        top-left
+    </div>
+    <div class="background-primary inset-small top-center text-small">
+        top-center
+    </div>
+    <div class="background-primary inset-small top-right text-small">
+        top-right
+    </div>
+    <div class="background-primary inset-small center-left text-small">
+        center-left
+    </div>
+    <div class="background-primary inset-small center text-small">
+        center
+    </div>
+    <div class="background-primary inset-small center-right text-small">
+        center-right
+    </div>
+    <div class="background-primary inset-small bottom-left text-small">
+        bottom-left
+    </div>
+    <div class="background-primary inset-small bottom-center text-small">
+        bottom-center
+    </div>
+    <div class="background-primary inset-small bottom-right text-small">
+        bottom-right
     </div>
 </div>
