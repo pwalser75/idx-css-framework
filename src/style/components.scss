@@ -13,8 +13,17 @@
   }
 }
 
-.shadow-below {
-  box-shadow: 0 0 2px 2px $shadow-color;
+.shadow-bottom {
+  box-shadow: 0 2px 4px $shadow-color;
+}
+.shadow-right {
+  box-shadow: 2px 0 4px $shadow-color;
+}
+.shadow-left {
+  box-shadow: -2px 0 4px $shadow-color;
+}
+.shadow-top {
+  box-shadow: 0 -2px 4px $shadow-color;
 }
 
 .shadow-inner {

@@ -52,8 +52,8 @@ $base-foreground-light: lighten($base-foreground, 10%);
 $shadow-color: rgba(0, 0, 0, 0.4);
 
 $primary: rgb(64, 81, 105);
-$dark: #3c424c;
-$light: #EEEEEE;
+$dark: #20282e;
+$light: #e3e6e7;
 $disabled: rgb(172, 165, 134);
 $blue: #3388c1;
 $green: rgb(150, 190, 10);
@@ -104,46 +104,46 @@ $inset-large: $spacing-large;
 $inset-tiny: $spacing-tiny;
 $inset-huge: $spacing-huge;
 
+
+// panels
+$light-background: $light;
+$light-background-hover: darken($light-background, 10%);
+$light-foreground: darken($light, 60%);
+$light-divider-color: darken($light-background, 30%);
+
+$dark-background: $dark;
+$dark-background-hover: darken($dark-background, 10%);
+$dark-foreground: lighten($dark, 80%);
+$dark-divider-color: darken($dark-background, 30%);
+
 // table
-$table-separator-color: #CCCCCC;
-$table-cell-background: #FFFFFF;
+$table-separator-color: darken($light-background, 20%);
+$table-cell-background: lighten($light-background, 10%);
 $table-cell-foreground: $base-foreground;
-$table-header-background: #FFFFFF;
-$table-header-foreground: $base-foreground;
-$table-first-cell-background: #EEEEEE;
-$table-first-cell-foreground: $table-cell-foreground;
-$table-zebra-cell-background: #F7F7F7;
+$table-header-background: $primary;
+$table-header-foreground: white;
+$table-first-cell-background: $light-background;
+$table-first-cell-foreground: darken($table-cell-foreground, 10%);
+$table-zebra-cell-background: lighten($light-background, 5%);
 $table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
 
-// panels
-
-$light-background: $light;
-$light-background-hover: darken($light-background, 10%);
-$light-foreground: #666666;
-$light-divider-color: darken($light-background, 20%);
-
-$dark-background: $dark;
-$dark-background-hover: darken($dark-background, 10%);
-$dark-foreground: #FFFFFF;
-$dark-divider-color: darken($dark-background, 20%);
-
 // cards
-$card-background: lighten($base-background, 20%);
-$card-border-color: #666666;
+$card-background: lighten($light, 20%);
+$card-border-color:darken($light, 20%);
 $card-border-radius: 3px;
 $card-color-border-size: 3px;
-$card-header-background: #dae2e8;
-$card-header-foreground: #4d6679;
-$card-footer-background: #e9eef1;
-$card-footer-foreground: #4d6679;
+$card-header-background: darken($light, 10%);
+$card-header-foreground: darken($light, 60%);
+$card-footer-background: $light;
+$card-footer-foreground: darken($light, 60%);
 
 // list
-$list-item-background: #FFFFFF;
-$list-item-background-hover: #EEEEEE;
+$list-item-background: lighten($light, 10%);
+$list-item-background-hover: $light;
 $list-item-foreground: $base-foreground;
-$list-item-divider-color: #CCCCCC;
+$list-item-divider-color: darken($light, 20%);;
 
 // nav
 $nav-popup-background: $list-item-background;

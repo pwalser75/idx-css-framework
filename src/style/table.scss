@@ -13,6 +13,7 @@ table {
   th, td {
     padding: $inset-small;
     text-align: left;
+    font-size: $font-size-base;
   }
   th{
     background: $table-header-background;
@@ -35,15 +36,17 @@ table {
   }
 
   &.table-key-value {
+    tr > td:first-child, tr > th:first-child {
+      font-weight: $font-weight-bold;
+      border-right: 1px solid $table-separator-color;
+      text-align: right;
+    }
+
     tr > td:first-child {
-      background: $card-header-background;
       font-weight: $font-weight-bold;
       background: $table-first-cell-background;
       color: $table-first-cell-foreground;
-      border-right: 2px solid $table-separator-color;
-    }
-    tr > th:first-child {
-      border-right: 2px solid $table-separator-color;
+      border-right: 1px solid $table-separator-color;
     }
   }
 }
