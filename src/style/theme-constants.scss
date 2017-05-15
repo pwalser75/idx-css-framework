@@ -117,14 +117,15 @@ $dark-foreground: lighten($dark, 80%);
 $dark-divider-color: darken($dark-background, 30%);
 
 // table
-$table-separator-color: darken($light-background, 20%);
-$table-cell-background: lighten($light-background, 10%);
-$table-cell-foreground: $base-foreground;
-$table-header-background: $primary;
+$table-cell-padding: $spacing-small $spacing-base;
+$table-separator-color: rgba(0,0,0,0.1);
+$table-cell-background: rgba(255,255,255,0.9);
+$table-cell-foreground: darken($base-foreground, 20%);
+$table-header-background: rgba(0,0,0,0.1);
 $table-header-foreground: white;
-$table-first-cell-background: $light-background;
-$table-first-cell-foreground: darken($table-cell-foreground, 10%);
-$table-zebra-cell-background: lighten($light-background, 5%);
+$table-first-cell-background: rgba(255,255,255,0.6);
+$table-first-cell-foreground: $table-cell-foreground;
+$table-zebra-cell-background: rgba(255,255,255,0.75);
 $table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
