@@ -6,12 +6,13 @@ table {
   border-collapse: collapse;
   margin-top: $spacing-base;
   margin-bottom: $spacing-base;
+  background: $primary;
 
   tr {
   }
 
   th, td {
-    padding: $inset-small;
+    padding: $table-cell-padding;
     text-align: left;
     font-size: $font-size-base;
   }
@@ -29,7 +30,7 @@ table {
   }
 
   &.table-striped {
-    tr:nth-child(even) > td {
+    tr:nth-of-type(odd) > td {
       background: $table-zebra-cell-background;
       color: $table-zebra-cell-foreground;
     }

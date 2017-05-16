@@ -15,14 +15,14 @@
 
   > section, .content {
     flex: 1 1 auto;
-    padding: $inset-small;
+    padding: $inset-base;
     margin: 0;
   }
 
   > header, > footer {
     flex: 0 0 auto;
     font-size: $font-size-small;
-    padding: $inset-tiny $inset-small;
+    padding: $inset-small $inset-base;
   }
 
   > header {

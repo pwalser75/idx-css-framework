@@ -119,13 +119,13 @@ $dark-divider-color: darken($dark-background, 30%);
 // table
 $table-cell-padding: $spacing-small $spacing-base;
 $table-separator-color: rgba(0,0,0,0.1);
-$table-cell-background: rgba(255,255,255,0.9);
+$table-cell-background: rgba(255,255,255,1);
 $table-cell-foreground: darken($base-foreground, 20%);
-$table-header-background: rgba(0,0,0,0.1);
+$table-header-background: rgba(0,0,0,0.05);
 $table-header-foreground: white;
-$table-first-cell-background: rgba(255,255,255,0.6);
+$table-first-cell-background: rgba(255,255,255,0.7);
 $table-first-cell-foreground: $table-cell-foreground;
-$table-zebra-cell-background: rgba(255,255,255,0.75);
+$table-zebra-cell-background: rgba(255,255,255,0.8);
 $table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
