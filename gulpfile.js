@@ -79,17 +79,16 @@ gulp.task('minify', () => {
 
 gulp.task('watch', ['build'], () => {
 	
-	var syncNotify = (stream, message) => {
+	var sync = (stream, message) => {
 		return stream
-		.pipe(browserSync.stream())
-		.pipe(notify({title: config.projectName, message: message, onLast: true }));
+		.pipe(browserSync.stream());
 	}
 	
 	gulp.watch(fileTypeMatcher(config.filetypes.stylesheet),
-		()=>syncNotify(compileStylesheets(), "Compiled stylesheets"));
+		()=>sync(compileStylesheets(), "Compiled stylesheets"));
 
 	gulp.watch(fileTypeMatcher(config.filetypes.resources),
-		()=>syncNotify(copyResources(), "Updated resources"));
+		()=>sync(copyResources(), "Updated resources"));
 });
 
 gulp.task('server', ['watch'], () => {

@@ -42,7 +42,10 @@ ul, ol {
   padding-left: 2em;
   margin: 0;
 }
-
+li {
+  margin-top: $spacing-small;
+  margin-bottom: $spacing-small;
+}
 ul ul, ul ol, ol ul, ol ol {
   padding-left: 1em;
 }

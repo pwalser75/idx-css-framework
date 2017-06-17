@@ -93,17 +93,16 @@ $transparent-darken: rgba(0, 0, 0, 0.1);
 // metrics
 
 $spacing-base: 12px;
-$spacing-small: 6px;
-$spacing-tiny: 3px;
-$spacing-large: 24px;
-$spacing-huge: 48px;
+$spacing-small: $spacing-base/$golden-ratio;
+$spacing-tiny: $spacing-base/$golden-ratio/$golden-ratio;
+$spacing-large: $spacing-base*$golden-ratio;
+$spacing-huge: $spacing-base*$golden-ratio*$golden-ratio;
 
 $inset-base: $spacing-base;
 $inset-small: $spacing-small;
 $inset-large: $spacing-large;
 $inset-tiny: $spacing-tiny;
 $inset-huge: $spacing-huge;
-
 
 // panels
 $light-background: $light;
@@ -118,21 +117,21 @@ $dark-divider-color: darken($dark-background, 30%);
 
 // table
 $table-cell-padding: $spacing-small $spacing-base;
-$table-separator-color: rgba(0,0,0,0.1);
-$table-cell-background: rgba(255,255,255,1);
+$table-separator-color: rgba(0, 0, 0, 0.1);
+$table-cell-background: rgba(255, 255, 255, 1);
 $table-cell-foreground: darken($base-foreground, 20%);
-$table-header-background: rgba(0,0,0,0.05);
+$table-header-background: rgba(0, 0, 0, 0.05);
 $table-header-foreground: white;
-$table-first-cell-background: rgba(255,255,255,0.7);
+$table-first-cell-background: rgba(255, 255, 255, 0.7);
 $table-first-cell-foreground: $table-cell-foreground;
-$table-zebra-cell-background: rgba(255,255,255,0.8);
+$table-zebra-cell-background: rgba(255, 255, 255, 0.8);
 $table-zebra-cell-foreground: $table-cell-foreground;
 
 // grid
 
 // cards
 $card-background: lighten($light, 20%);
-$card-border-color:darken($light, 20%);
+$card-border-color: darken($light, 20%);
 $card-border-radius: 3px;
 $card-color-border-size: 3px;
 $card-header-background: darken($light, 10%);
@@ -144,7 +143,8 @@ $card-footer-foreground: darken($light, 60%);
 $list-item-background: lighten($light, 10%);
 $list-item-background-hover: $light;
 $list-item-foreground: $base-foreground;
-$list-item-divider-color: darken($light, 20%);;
+$list-item-divider-color: darken($light, 20%);
+;
 
 // nav
 $nav-popup-background: $list-item-background;
