@@ -14,9 +14,9 @@
   float: right !important;
 }
 
-.layout-table {
+.table-layout {
   display: table;
-  border-spacing: $spacing-small;
+  border-spacing: $spacing-base;
 
   > * {
     display: table-row;

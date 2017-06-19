@@ -34,6 +34,10 @@ b, strong {
   font-weight: $font-weight-bold;
 }
 
+strong {
+  color: $base-foreground-dark;
+}
+
 ul {
   list-style-type: square;
 }
@@ -42,10 +46,12 @@ ul, ol {
   padding-left: 2em;
   margin: 0;
 }
+
 li {
   margin-top: $spacing-small;
   margin-bottom: $spacing-small;
 }
+
 ul ul, ul ol, ol ul, ol ol {
   padding-left: 1em;
 }
@@ -61,4 +67,20 @@ a.undecorated {
     text-decoration: none;
     cursor: pointer;
   }
+}
+
+dt {
+  font-weight: $font-weight-bold;
+  color: $base-foreground-dark;
+  display: list-item;
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+dd {
+  font-weight: $font-weight-plain;
+  padding-left: 1em;
+  margin: 0;
 }
