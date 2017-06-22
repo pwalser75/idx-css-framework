@@ -21,16 +21,17 @@ $media-xl-min: $media-xl;
 // Typography
 
 $base-font: 'Open Sans', sans-serif;
-$title-font: 'Titillium Web', sans-serif;
-$header-font: 'Titillium Web', sans-serif;
+$title-font: 'Open Sans', sans-serif;
+$header-font: 'Open Sans', sans-serif;
 $code-font: 'Source Code Pro', 'Consolas', monospace;
 
 $title-font-weight: 700;
+$header-font-weight: 700;
 $font-weight-plain: 400;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
-$font-size-base: 15px;
+$font-size-base: 14px;
 $font-size-tiny: $font-size-base* 11/14;
 $font-size-small: $font-size-base* 12/14;
 $font-size-large: ceil($font-size-base* 24/14);
