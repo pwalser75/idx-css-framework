@@ -39,18 +39,19 @@ option:disabled {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: $font-size-tiny;
+    font-weight: $font-weight-plain;
   }
 
   > input, > .input, > select, > textarea {
     font-weight: $font-weight-semi-bold;
-    padding: $spacing-tiny;
+    padding: $spacing-small $spacing-tiny;
     border: none;
     border-bottom: 1px solid $separator-color;
     background: rgba(0, 0, 0, 0.05);
   }
   * > input, * > .input, * > select, * > textarea {
     font-weight: $font-weight-semi-bold;
-    padding: $spacing-tiny 0;
+    padding: $spacing-small $spacing-tiny;
     border: none;
     background: none;
   }
@@ -62,6 +63,7 @@ option:disabled {
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: $font-size-small;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
