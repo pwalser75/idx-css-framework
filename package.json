@@ -12,16 +12,16 @@
     "build": "gulp build"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "del": "^2.2.2",
+    "browser-sync": "^2.23.5",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-concat-css": "^2.3.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat-css": "^3.0.0",
     "gulp-cssnano": "^2.1.2",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-sass": "^3.1.0",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^2.2.1"
   },
   "dependencies": {
     "jquery": "^3.2.1"

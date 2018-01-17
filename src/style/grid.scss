@@ -12,6 +12,7 @@
   &.gutter {
     margin-right: $spacing-base;
     margin-left: -$spacing-base;
+	min-width: 100%;
     max-width: calc(100% + #{2*$spacing-base});
 
     > * {
