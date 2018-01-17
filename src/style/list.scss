@@ -28,7 +28,7 @@
 
   a, a:active, a:visited {
     color: inherit;
-    font-weight: normal;
+    font-weight: $font-weight-plain;
     text-decoration: none;
     cursor: pointer;
   }

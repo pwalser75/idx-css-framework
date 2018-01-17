@@ -4,9 +4,9 @@
     <div class="col-5 col-lg-6 col-md-12">
         <div class="card inset-large">
             <section>
-                Form with standard inputs and style classes <code>layout-table key-value</code>:
+                Form with standard inputs and style classes <code>table-layout key-value</code>:
                 <p>
-                <form class="layout-table key-value full-width">
+                <form class="table-layout key-value full-width">
 
                     <div>
                         <label>E-Mail:</label>
@@ -43,6 +43,24 @@
                         <label>
                             <input type="checkbox"> Checkbox
                         </label>
+                    </div>
+                    <div>
+                        <label>Custom</label>
+                        <div>
+                            <div class="input-widget">
+                                <div class="input">
+                                    <input type="text" value="Input">
+                                    <div class="input-widget-dropdown">
+                                        <ul class="list">
+                                            <li>Popup content</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="input-widget-button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <label>Comment:</label>
@@ -126,11 +144,34 @@
                         <input name="year" size="4" placeholder="Year" type="text">
                     </div>
                 </div>
-                <div>
+                <div class="input">
                     <label class="input">
                         <input type="checkbox"> Checkbox
                     </label>
                 </div>
+
+                <div>
+                    <div class="input-field info">
+                        <label>Custom widget</label>
+                        <div>
+                            <div class="input-widget">
+                                <div class="input">
+                                    <input type="text" value="Input">
+                                    <div class="input-widget-dropdown">
+                                        <ul class="list">
+                                            <li>Popup content</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="input-widget-button">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <span class="input-message"><i class="fa fa-info"></i> Input info</span>
+                    </div>
+                </div>
+
                 <div class="input-field">
                     <label>Comment:</label>
                     <textarea rows="4" cols="30">Lorem ispum</textarea>

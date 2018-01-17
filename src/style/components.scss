@@ -13,15 +13,67 @@
   }
 }
 
+.input-widget {
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+  .input {
+    position: relative;
+    flex: 0 1 auto;
+    display: flex;
+    padding: 0 !important;
+
+    * {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+
+    .input-widget-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 100%;
+      border: 1px solid $base-foreground;
+      border-top: none;
+      box-shadow: 2px 4px 4px $shadow-color;
+      background-color: white;
+      z-index: 10;
+    }
+  }
+
+  &.show-dropdown {
+    .input {
+      .input-widget-dropdown {
+        display: inherit;
+      }
+    }
+  }
+
+  .input-widget-button {
+    margin: 0;
+    padding: 0 $inset-tiny;
+    flex: 0 0 auto;
+    border: 1px solid $base-foreground;
+    border-left: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 .shadow-bottom {
   box-shadow: 0 2px 4px $shadow-color;
 }
+
 .shadow-right {
   box-shadow: 2px 0 4px $shadow-color;
 }
+
 .shadow-left {
   box-shadow: -2px 0 4px $shadow-color;
 }
+
 .shadow-top {
   box-shadow: 0 -2px 4px $shadow-color;
 }

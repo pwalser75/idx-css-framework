@@ -38,7 +38,7 @@
     padding: 0;
   }
 
-  > *, .nav-item  {
+  > *, .nav-item {
     padding: $inset-base;
     display: inline-block;
     flex: 0 0 auto;
@@ -57,7 +57,7 @@
 
   a, a:active, a:visited, a:hover {
     color: inherit;
-    font-weight: normal;
+    font-weight: $font-weight-plain;
     text-decoration: none;
     cursor: pointer;
   }
@@ -69,13 +69,13 @@
 }
 
 .navbar-small {
-  > *, .nav-item  {
+  > *, .nav-item {
     padding: $inset-small;
   }
 }
 
 .navbar-large {
-  > *, .nav-item  {
+  > *, .nav-item {
     padding: $inset-large;
   }
 }

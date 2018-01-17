@@ -7,6 +7,7 @@ input, textarea, select, option {
   padding: $inset-tiny;
   font-family: $base-font;
   font-size: $font-size-base;
+  font-weight: $font-weight-plain;
   color: $input-color;
 }
 
@@ -43,14 +44,14 @@ option:disabled {
   }
 
   > input, > .input, > select, > textarea {
-    font-weight: $font-weight-semi-bold;
+    font-weight: $font-weight-plain;
     padding: $spacing-small $spacing-tiny;
     border: none;
     border-bottom: 1px solid $separator-color;
     background: rgba(0, 0, 0, 0.05);
   }
   * > input, * > .input, * > select, * > textarea {
-    font-weight: $font-weight-semi-bold;
+    font-weight: $font-weight-plain;
     padding: $spacing-small $spacing-tiny;
     border: none;
     background: none;

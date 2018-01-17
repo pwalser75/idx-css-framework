@@ -29,6 +29,12 @@ Install gulp on your system (run as admin user)
 npm install -g gulp
 ```
 
+This project uses gulp-sass, which uses node-sass, which uses node-gyp, which requires native build tools to be installed on your system (major pain in the a**, sorry about that).
+On Windows, it requires the windows-build-tools to be installed globally (for other platforms, consult https://github.com/nodejs/node-gyp):
+```
+npm install -g --production windows-build-tools
+```
+
 ## Build / Run with Gulp
 Build and run local server (accessible on [http://localhost:4000](http://localhost:4000)):
 ```
