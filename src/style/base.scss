@@ -6,8 +6,8 @@
 }
 
 ::selection {
-	color: white;
-	background: $dark;
+  color: white;
+  background: $dark;
 }
 
 html {
@@ -21,6 +21,12 @@ body {
   padding: 0;
   color: $base-foreground;
   background-color: $base-background;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $list-item-divider-color;
 }
 
 .no-select, .no-select > * {

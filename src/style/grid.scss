@@ -12,7 +12,7 @@
   &.gutter {
     margin-right: $spacing-base;
     margin-left: -$spacing-base;
-	min-width: 100%;
+    min-width: 100%;
     max-width: calc(100% + #{2*$spacing-base});
 
     > * {
@@ -42,6 +42,7 @@
   @for $i from 1 through 12 {
     .col-#{$i} {
       flex: 0 0 100% * $i/12;
+      max-width: 100% * $i/12;
     }
   }
 
@@ -49,6 +50,7 @@
     @for $i from 1 through 12 {
       .col-lg-#{$i} {
         flex: 0 0 100% * $i/12;
+        max-width: 100% * $i/12;
       }
     }
   }
@@ -56,6 +58,7 @@
     @for $i from 1 through 12 {
       .col-md-#{$i} {
         flex: 0 0 100% * $i/12;
+        max-width: 100% * $i/12;
       }
     }
   }
@@ -63,6 +66,7 @@
     @for $i from 1 through 12 {
       .col-sm-#{$i} {
         flex: 0 0 100% * $i/12;
+        max-width: 100% * $i/12;
       }
     }
   }
@@ -70,6 +74,7 @@
     @for $i from 1 through 12 {
       .col-xs-#{$i} {
         flex: 0 0 100% * $i/12;
+        max-width: 100% * $i/12;
       }
     }
   }
