@@ -16,17 +16,21 @@ table {
     text-align: left;
     font-size: $font-size-base;
   }
-  th{
+  th {
     background: $table-header-background;
     color: $table-header-foreground;
   }
-  td{
+  td {
     border-top: 1px solid $table-separator-color;
     background: $table-cell-background;
     color: $table-cell-foreground;
   }
   tr:first-child > td {
     border-top: 0;
+  }
+
+  &.table-full-width {
+    width: 100%;
   }
 
   &.table-striped {

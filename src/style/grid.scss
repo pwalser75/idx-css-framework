@@ -28,6 +28,24 @@
       padding: 0 0 $spacing-small $spacing-small;
     }
   }
+  &.gutter-large {
+    margin-right: $spacing-large;
+    margin-left: -$spacing-large;
+    max-width: calc(100% + #{2*$spacing-large});
+
+    > * {
+      padding: 0 0 $spacing-large $spacing-large;
+    }
+  }
+  &.gutter-huge {
+    margin-right: $spacing-huge;
+    margin-left: -$spacing-huge;
+    max-width: calc(100% + #{2*$spacing-huge});
+
+    > * {
+      padding: 0 0 $spacing-huge $spacing-huge;
+    }
+  }
 
   > * {
     position: relative;
