@@ -51,6 +51,8 @@
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 1 1 100%;
+    max-width: 100%
   }
 
   .align-fill {

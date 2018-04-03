@@ -39,3 +39,32 @@
 .flex-1 {
   flex: 1 1 auto;
 }
+
+.resize-fix {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.resize-grow, .resize-grow-1 {
+  flex-grow: 1;
+}
+
+.resize-grow-2 {
+  flex-grow: 2;
+}
+
+.resize-grow-3 {
+  flex-grow: 3;
+}
+
+.resize-shrink, .resize-shrink-1 {
+  flex-shrink: 1;
+}
+
+.resize-shrink-2 {
+  flex-shrink: 2;
+}
+
+.resize-shrink-3 {
+  flex-shrink: 3;
+}

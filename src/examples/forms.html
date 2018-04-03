@@ -85,75 +85,124 @@
                 Form with <code>input-field</code> decoration (label, input and optional message):
                 <p>
                 <div class="grid gutter">
+
+                    <div class="col-6">
+                        <div class="input-field">
+                            <label>Field Name</label>
+                            <div class="input-field-input">
+                                <input type="text" size="20" value="Foobar">
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-remove"></i> Input error</span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-field">
+                            <label>Field Name</label>
+                            <div class="input-field-input">
+                                <select class="resize-fix" name="currency">
+                                    <option selected value="CHF">CHF</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="USD">USD</option>
+                                </select>
+                                <input class="resize-grow resize-shrink" type="text" size="10" value="12'345.60">
+                                <button class="resize-fix">...</button>
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-remove"></i> Input error</span>
+                        </div>
+                    </div>
+
                     <div class="col-3 col-sm-6">
                         <div class="input-field error">
                             <label>Field Name</label>
-                            <input type="text" size="20" value="Foobar">
-                            <span class="input-message"><i class="fa fa-remove"></i> Input error</span>
+                            <div class="input-field-input">
+                                <input type="text" size="20" value="Foobar">
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-remove"></i> Input error</span>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6">
                         <div class="input-field warning">
                             <label>Field Name</label>
-                            <input type="text" size="20" value="Foobar">
-                            <span class="input-message"><i class="fa fa-warning"></i> Input warning</span>
+                            <div class="input-field-input">
+                                <input type="text" size="20" value="Foobar">
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-warning"></i> Input warning</span>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6">
                         <div class="input-field success">
                             <label>Field Name</label>
-                            <input type="text" size="20" value="Foobar">
-                            <span class="input-message"><i class="fa fa-check-circle"></i> Input success</span>
+                            <div class="input-field-input">
+                                <input type="text" size="20" value="Foobarsdfgsdfgsdfgsdfgsdfgsdfgdfg">
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-check-circle"></i> Input success</span>
                         </div>
                     </div>
                     <div class="col-3 col-sm-6">
                         <div class="input-field info">
                             <label>Field Name</label>
-                            <input type="text" size="20" value="Foobar">
-                            <span class="input-message"><i class="fa fa-info"></i> Input info</span>
+                            <div class="input-field-input">
+                                <input type="text" size="20" value="Foobar">
+                            </div>
+                            <span class="input-field-message"><i class="fa fa-info"></i> Input info</span>
                         </div>
                     </div>
-                </div>
-                <div class="input-field">
-                    <label>E-Mail:</label>
-                    <input type="text" size="20" placeholder="name@host.org">
-                </div>
-                <div class="input-field">
-                    <label>Password:</label>
-                    <input type="password" size="20">
-                </div>
-                <div class="input-field">
-                    <label>Birth date:</label>
-                    <div class="input">
-                        <input name="day" size="2" placeholder="Day" type="text">
-                        <select name="month">
-                            <option disabled selected value>Month</option>
-                            <option value="0">January</option>
-                            <option value="1">February</option>
-                            <option value="2">March</option>
-                            <option value="3">April</option>
-                            <option value="4">May</option>
-                            <option value="5">June</option>
-                            <option value="6">July</option>
-                            <option value="7">August</option>
-                            <option value="8">September</option>
-                            <option value="9">October</option>
-                            <option value="10">November</option>
-                            <option value="11">December</option>
-                        </select>
-                        <input name="year" size="4" placeholder="Year" type="text">
+                    <div class="col-6 col-sm-12 input-field">
+                        <label>E-Mail:</label>
+                        <div class="input-field-input">
+                            <input type="text" size="20" placeholder="name@host.org">
+                        </div>
                     </div>
-                </div>
-                <div class="input">
-                    <label class="input">
+                    <div class="col-6 col-sm-12 input-field">
+                        <label>Password:</label>
+                        <div class="input-field-input">
+                            <input type="password" size="20">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 input-field">
+                        <label>Profession:</label>
+                        <div class="input-field-input">
+                            <select name="profession">
+                                <option disabled selected value>Select profession</option>
+                                <option value="0">Developer</option>
+                                <option value="1">Architect</option>
+                                <option value="2">Gardener</option>
+                                <option value="3">Something else</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 input-field">
+                        <label>Birth date:</label>
+                        <div class="input-field-input">
+                            <input class="resize-fix" name="day" size="2" placeholder="Day" type="text">
+                            <select class="resize-grow" name="month">
+                                <option disabled selected value>Month</option>
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
+                            </select>
+                            <input class="resize-fix" name="year" size="4" placeholder="Year" type="text">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 input-field">
+                        <div class="input-field-input">
+                        <span>
                         <input type="checkbox"> Checkbox
-                    </label>
-                </div>
-
-                <div>
-                    <div class="input-field info">
+                        </span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 input-field info">
                         <label>Custom widget</label>
-                        <div>
+                        <div class="input-field-input">
                             <div class="input-widget">
                                 <div class="input">
                                     <input type="text" value="Input">
@@ -168,13 +217,15 @@
                                 </button>
                             </div>
                         </div>
-                        <span class="input-message"><i class="fa fa-info"></i> Input info</span>
+                        <span class="input-field-message"><i class="fa fa-info"></i> Input info</span>
                     </div>
-                </div>
 
-                <div class="input-field">
-                    <label>Comment:</label>
-                    <textarea rows="4" cols="30">Lorem ispum</textarea>
+                    <div class="input-field">
+                        <label>Comment:</label>
+                        <div class="input-field-input">
+                            <textarea rows="4" cols="30">Lorem ispum</textarea>
+                        </div>
+                    </div>
                 </div>
                 <div>
                     <button type="submit">Submit</button>

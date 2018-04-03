@@ -25,41 +25,42 @@ option:disabled {
 // Input Fields
 .input-field {
 
-  margin: $spacing-base 0;
-
-  > * {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   > label:first-of-type {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: $font-size-tiny;
-    font-weight: $font-weight-plain;
+    font-size: $font-size-small;
+    font-weight: $font-weight-normal;
   }
 
-  > input, > .input, > select, > textarea {
+  .input-field-input {
     font-weight: $font-weight-plain;
     padding: $spacing-small $spacing-tiny;
     border: none;
     border-bottom: 1px solid $separator-color;
     background: rgba(0, 0, 0, 0.05);
+    display: flex;
+
+    > * {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0 0 0 $spacing-base;
+      flex: 1 0 auto;
+      max-width: 100%;
+      box-shadow: none;
+    }
+    > :first-child {
+      margin-left: 0;
+    }
+    input, select, textarea {
+
+    }
+    option {
+      padding: 0 $spacing-small;
+    }
   }
-  * > input, * > .input, * > select, * > textarea {
-    font-weight: $font-weight-plain;
-    padding: $spacing-small $spacing-tiny;
-    border: none;
-    background: none;
-  }
-  select, option {
-    padding: 0;
-  }
-  > .input-message {
+  > .input-field-message {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -69,42 +70,42 @@ option:disabled {
 }
 
 .input-field.success {
-  > input, > .input, > select, > textarea {
+  > input-field-input {
     border-color: $success;
   }
-  > label:first-of-type, > .input-message {
+  > label:first-of-type, > .input-field-message {
     color: $success;
   }
 }
 
 .input-field.error {
-  > input, > .input, > select, > textarea {
+  > input-field-input {
     border-color: $error;
   }
 
-  > label:first-of-type, > .input-message {
+  > label:first-of-type, > .input-field-message {
     color: $error;
   }
 }
 
 .input-field.warning {
 
-  > input, > .input, > select, > textarea {
+  > input-field-input {
     border-color: $warning;
   }
 
-  > label:first-of-type, > .input-message {
+  > label:first-of-type, > .input-field-message {
     color: $warning;
   }
 }
 
 .input-field.info {
 
-  > input, > .input, > select, > textarea {
+  > input-field-input {
     border-color: $info;
   }
 
-  > label:first-of-type, > .input-message {
+  > label:first-of-type, > .input-field-message {
     color: $info;
   }
 }
