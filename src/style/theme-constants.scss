@@ -21,8 +21,8 @@ $media-xl-min: $media-xl;
 // Typography
 
 $base-font: 'Merriweather Sans', sans-serif;
-$title-font: 'Merriweather Sans', sans-serif;
-$header-font: 'Merriweather Sans', sans-serif;
+$title-font: $base-font;
+$header-font: $base-font;
 $code-font: 'Source Code Pro', 'Consolas', monospace;
 
 $title-font-weight: 700;

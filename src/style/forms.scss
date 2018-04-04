@@ -24,8 +24,10 @@ option:disabled {
 
 // Input Fields
 .input-field {
+  overflow: hidden;
 
   > label:first-of-type {
+    color: $primary;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -37,7 +39,7 @@ option:disabled {
     font-weight: $font-weight-plain;
     padding: $spacing-small $spacing-tiny;
     border: none;
-    border-bottom: 1px solid $separator-color;
+    border-bottom: 1.5px solid $separator-color;
     background: rgba(0, 0, 0, 0.05);
     display: flex;
 
@@ -61,52 +63,69 @@ option:disabled {
     }
   }
   > .input-field-message {
+    color: $primary;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: $font-size-small;
-    font-weight: $font-weight-semi-bold;
+    font-weight: $font-weight-normal;
+  }
+}
+
+.input-field.active {
+
+  > .input-field-input {
+    border-color: $dark;
+  }
+  > label:first-of-type, > .input-field-message {
+    color: $dark;
+    font-weight: $font-weight-bold;
   }
 }
 
 .input-field.success {
-  > input-field-input {
+
+  > .input-field-input {
     border-color: $success;
   }
   > label:first-of-type, > .input-field-message {
     color: $success;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
 .input-field.error {
-  > input-field-input {
+  > .input-field-input {
     border-color: $error;
   }
 
   > label:first-of-type, > .input-field-message {
     color: $error;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
 .input-field.warning {
 
-  > input-field-input {
+  > .input-field-input {
     border-color: $warning;
   }
 
   > label:first-of-type, > .input-field-message {
     color: $warning;
+    font-weight: $font-weight-semi-bold;
   }
 }
 
 .input-field.info {
 
-  > input-field-input {
+  > .input-field-input {
     border-color: $info;
   }
 
   > label:first-of-type, > .input-field-message {
     color: $info;
+    font-weight: $font-weight-semi-bold;
   }
 }
 

@@ -12,6 +12,7 @@
   background: $card-background;
   text-overflow: ellipsis;
   transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
+  overflow: hidden;
 
   > section, .content {
     flex: 1 1 auto;

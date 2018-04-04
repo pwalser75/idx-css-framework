@@ -150,7 +150,10 @@
     <div class="content">
         <div id="content"></div>
     </div>
-    <script> $('#content').load('examples/containers.html'); </script>
+    <script>
+        $('textarea').autoResize();
+        $('#content').load('examples/containers.html');
+    </script>
 </div>
 </body>
 </html>
