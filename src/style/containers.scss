@@ -28,6 +28,10 @@
   padding: $inset-large;
 }
 
+.content-compact {
+  padding: 0 $inset-large;
+}
+
 .block {
   margin-top: $spacing-base;
   display: block !important;;
