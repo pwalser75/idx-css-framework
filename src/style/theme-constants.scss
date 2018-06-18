@@ -20,7 +20,7 @@ $media-xl-min: $media-xl;
 
 // Typography
 
-$base-font: 'Open Sans', sans-serif;
+$base-font: 'Noto Sans', sans-serif;
 $title-font: $base-font;
 $header-font: $base-font;
 $code-font: 'Source Code Pro', 'Consolas', monospace;
@@ -94,7 +94,7 @@ $transparent-darken: rgba(0, 0, 0, 0.1);
 
 // metrics
 
-$spacing-base: 12px;
+$spacing-base: $font-size-base;
 $spacing-small: $spacing-base/$golden-ratio;
 $spacing-tiny: $spacing-base/$golden-ratio/$golden-ratio;
 $spacing-large: $spacing-base*$golden-ratio;
@@ -122,9 +122,9 @@ $table-cell-padding: $spacing-small $spacing-base;
 $table-separator-color: rgba(0, 0, 0, 0.1);
 $table-cell-background: rgba(255, 255, 255, 1);
 $table-cell-foreground: darken($base-foreground, 20%);
-$table-header-background: rgba(0, 0, 0, 0.05);
+$table-header-background: rgba(0, 0, 0, 0.0);
 $table-header-foreground: white;
-$table-first-cell-background: rgba(255, 255, 255, 0.8);
+$table-first-cell-background: rgba(255, 255, 255, 0.75);
 $table-first-cell-foreground: $table-cell-foreground;
 $table-zebra-cell-background: rgba(255, 255, 255, 0.9);
 $table-zebra-cell-foreground: $table-cell-foreground;
