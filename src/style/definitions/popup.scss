@@ -1,4 +1,4 @@
-@import "theme-constants.scss";
+@import "../theme-constants.scss";
 
 .popup {
 
@@ -93,6 +93,7 @@
     right: auto;
   }
 }
+
 .popup-menu-left {
   > ul, > .popup-content {
     top: 100%;

@@ -1,4 +1,4 @@
-@import "theme-constants.scss";
+@import "../theme-constants.scss";
 
 @each $name, $color in $colors {
   .label-#{$name} {
