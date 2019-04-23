@@ -80,22 +80,6 @@ a.undecorated {
   }
 }
 
-dt {
-  font-weight: $font-weight-bold;
-  color: $base-foreground-dark;
-  display: list-item;
-  list-style-type: square;
-  list-style-position: inside;
-  padding-left: 0;
-  margin: 0;
-}
-
-dd {
-  font-weight: $font-weight-plain;
-  padding-left: 1em;
-  margin: 0;
-}
-
 pre > code {
   display: block;
 }

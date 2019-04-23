@@ -20,9 +20,9 @@ $media-xl-min: $media-xl;
 
 // Typography
 
-$base-font: 'Open Sans', "Trebuchet MS", Verdana, sans-serif;
-$title-font: $base-font;
-$header-font: $base-font;
+$base-font: 'Lato', "Trebuchet MS", Verdana, sans-serif;
+$title-font: 'Fira Sans', "Trebuchet MS", Verdana, sans-serif;
+$header-font: 'Fira Sans', "Trebuchet MS", Verdana, sans-serif;
 $code-font: 'Source Code Pro', 'Consolas', "Courier", monospace;
 
 $header-font-weight: 700;
@@ -31,7 +31,7 @@ $font-weight-normal: 400;
 $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 
-$font-size-base: 15px;
+$font-size-base: 16px;
 $font-size-tiny: $font-size-base* 11/14;
 $font-size-small: $font-size-base* 12/14;
 $font-size-large: ceil($font-size-base* 24/14);
@@ -56,8 +56,8 @@ $shadow-color: rgba(0, 0, 0, 0.4);
 $primary: rgb(64, 81, 105);
 $dark: #20282e;
 $light: #e3e6e7;
-$disabled: rgb(172, 165, 134);
-$blue: #3388c1;
+$disabled: rgb(165, 155, 145);
+$blue: rgb(51, 136, 193);
 $green: rgb(150, 190, 10);
 $yellow: rgb(255, 201, 1);
 $orange: #f79803;
