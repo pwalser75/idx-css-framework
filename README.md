@@ -6,7 +6,7 @@
 - **SASS** (Syntactically Awesome StyleSheets) based **CSS3 framework**
 - **Pure CSS**, no Javascript required at runtime.
 - **Easy to customize**: start by changing the `theme-constants.scss` to derive your own theme, or add and alter styles to build your custom deviation.
-- **Build**: **Gulp/NPM** build, builds the **minimized CSS**, and can boot **browser-sync** with auto-reload when editing styles.
+- **Build**: **NPM** build, builds the **minimized CSS**, and can start **live-server** with auto-reload when editing styles.
 - **Responsive** classes to style for multiple screen sizes / devices. Uses the same naming conventions (`xl`,`lg`,`md`,`sm`,`xs`) / media break points as Bootstrap.
 - **Grid system**: 12-column responsive grid.
 - **Cards**: card styles with optional headers, footers, and material design shadows
@@ -18,29 +18,19 @@
 ![Input Fields](input-fields.png)
 
 ## Setup (Node and NPM)
-This project requires Node.js for the build process (download 'latest' from https://nodejs.org).
+This project requires Node.js an NPM (Node Package Manager) for the build process (download 'latest' from https://nodejs.org).
 
 Install node module dependencies:
 ```
-npm install
-```
-Install gulp on your system (run as admin user)
-```
-npm install -g gulp
+npm i
 ```
 
-This project uses gulp-sass, which uses node-sass, which uses node-gyp, which requires native build tools to be installed on your system (major pain in the a**, sorry about that).
-On Windows, it requires the windows-build-tools to be installed globally (for other platforms, consult https://github.com/nodejs/node-gyp):
-```
-npm install -g --production windows-build-tools
-```
-
-## Build / Run with Gulp
+## Build / Run
 Build and run local server (accessible on [http://localhost:4000](http://localhost:4000)):
 ```
-gulp
+npm run start
 ```
 Build only (target folder: `./build`):
 ```
-gulp build
+npm run build
 ```

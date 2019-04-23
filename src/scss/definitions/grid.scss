@@ -19,6 +19,7 @@
       padding: 0 0 $spacing-base $spacing-base;
     }
   }
+
   &.gutter-small {
     margin-right: $spacing-small;
     margin-left: -$spacing-small;
@@ -28,6 +29,7 @@
       padding: 0 0 $spacing-small $spacing-small;
     }
   }
+
   &.gutter-large {
     margin-right: $spacing-large;
     margin-left: -$spacing-large;
@@ -37,6 +39,7 @@
       padding: 0 0 $spacing-large $spacing-large;
     }
   }
+
   &.gutter-huge {
     margin-right: $spacing-huge;
     margin-left: -$spacing-huge;
