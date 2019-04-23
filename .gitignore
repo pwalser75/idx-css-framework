@@ -2,4 +2,5 @@ node_modules/
 .gradle/
 build/
 .idea/
-npm-debug.log.336091726
+*.iml
+npm-debug.log.*
