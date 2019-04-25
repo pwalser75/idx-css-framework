@@ -39,7 +39,6 @@ option:disabled {
     font-weight: $font-weight-plain;
     padding: $spacing-small $spacing-tiny;
     border: none;
-    border-bottom: 1.5px solid $separator-color;
     background: rgba(0, 0, 0, 0.05);
     display: flex;
 
@@ -79,7 +78,7 @@ option:disabled {
 .input-field.active {
 
   > .input-field-input {
-    border-color: $dark;
+    border-bottom: 2px solid $dark;
   }
 
   > label:first-of-type, > .input-field-message {
@@ -91,7 +90,7 @@ option:disabled {
 .input-field.success {
 
   > .input-field-input {
-    border-color: $success;
+    border-bottom: 2px solid $success;
   }
 
   > label:first-of-type, > .input-field-message {
@@ -102,7 +101,7 @@ option:disabled {
 
 .input-field.error {
   > .input-field-input {
-    border-color: $error;
+    border-bottom: 2px solid $error;
   }
 
   > label:first-of-type, > .input-field-message {
@@ -114,7 +113,7 @@ option:disabled {
 .input-field.warning {
 
   > .input-field-input {
-    border-color: $warning;
+    border-bottom: 2px solid $warning;
   }
 
   > label:first-of-type, > .input-field-message {
@@ -126,7 +125,7 @@ option:disabled {
 .input-field.info {
 
   > .input-field-input {
-    border-color: $info;
+    border-bottom: 2px solid $info;
   }
 
   > label:first-of-type, > .input-field-message {
