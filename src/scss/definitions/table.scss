@@ -13,12 +13,14 @@ table {
   th, td {
     padding: $table-cell-padding;
     text-align: left;
-    font-size: $font-size-base;
+    font-size: 100%;
   }
+
   th {
     background: $table-header-background;
     color: $table-header-foreground;
   }
+
   td {
     border: none;
     border-bottom: 1px solid $table-separator-color;

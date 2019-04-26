@@ -3,17 +3,19 @@
 @each $name, $color in $colors {
   .label-#{$name} {
     display: inline-block;
-    font-size: $font-size-tiny !important;
+    font-size: 80% !important;
     font-weight: $font-weight-semi-bold;
     background: $color;
     border-radius: 0.25em;
     padding: $inset-tiny;
+    margin: $inset-tiny 0;
     user-select: none;
     white-space: nowrap;
     min-width: 2em;
     min-height: 1.5em;
     text-align: center;
     vertical-align: middle;
+    word-wrap: normal;
 
     @if $name == 'dark' {
       color: $dark-foreground;

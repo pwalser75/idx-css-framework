@@ -6,7 +6,7 @@
 input, textarea, select, option {
   padding: $inset-tiny;
   font-family: $base-font;
-  font-size: $font-size-base;
+  font-size: 100%;
   font-weight: $font-weight-plain;
   color: $input-color;
 }
@@ -31,7 +31,6 @@ option:disabled {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: $font-size-small;
     font-weight: $font-weight-normal;
   }
 
@@ -70,7 +69,7 @@ option:disabled {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: $font-size-small;
+    font-size: 80%;
     font-weight: $font-weight-normal;
   }
 }

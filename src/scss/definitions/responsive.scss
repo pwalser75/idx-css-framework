@@ -1,35 +1,52 @@
 @import "../theme-constants.scss";
 
+// xl
 @media only screen and (min-width: $media-xl-min) {
-  // xl
+
   .hide-xl-only, .hide-xl-up, .hide-xl-down, .display-lg-only, .hide-lg-up, .display-lg-down, .display-md-only, .hide-md-up, .display-md-down, .display-sm-only, .hide-sm-up, .display-sm-down, .display-xs-only, .hide-xs-up, .display-xs-down {
     display: none !important;
   }
 }
 
+// lg
 @media only screen and (min-width: $media-lg-min) and (max-width: $media-lg-max) {
-  // lg
+
+  body {
+    font-size: 95% !important;
+  }
+
   .display-xl-only, .display-xl-up, .hide-xl-down, .hide-lg-only, .hide-lg-up, .hide-lg-down, .display-md-only, .hide-md-up, .display-md-down, .display-sm-only, .hide-sm-up, .display-sm-down, .display-xs-only, .hide-xs-up, .display-xs-down {
     display: none !important;
   }
 }
 
+// md
 @media only screen and (min-width: $media-md-min) and (max-width: $media-md-max) {
-  // md
+  body {
+    font-size: 90% !important;
+  }
   .display-xl-only, .display-xl-up, .hide-xl-down, .display-lg-only, .display-lg-up, .hide-lg-down, .hide-md-only, .hide-md-up, .hide-md-down, .display-sm-only, .hide-sm-up, .display-sm-down, .display-xs-only, .hide-xs-up, .display-xs-down {
     display: none !important;
   }
 }
 
+// sm
 @media only screen and (min-width: $media-sm-min) and (max-width: $media-sm-max) {
-  // sm
+  body {
+    font-size: 85% !important;
+  }
   .display-xl-only, .display-xl-up, .hide-xl-down, .display-lg-only, .display-lg-up, .hide-lg-down, .display-md-only, .display-md-up, .hide-md-down, .hide-sm-only, .hide-sm-up, .hide-sm-down, .display-xs-only, .hide-xs-up, .display-xs-down {
     display: none !important;
   }
 }
 
+// xs
 @media only screen and (max-width: $media-xs-max) {
-  // xs
+
+  body {
+    font-size: 80% !important;
+  }
+
   .display-xl-only, .display-xl-up, .hide-xl-down, .display-lg-only, .display-lg-up, .hide-lg-down, .display-md-only, .display-md-up, .hide-md-down, .display-sm-only, .display-sm-up, .hide-sm-down, .hide-xs-only, .hide-xs-up, .hide-xs-down {
     display: none !important;
   }

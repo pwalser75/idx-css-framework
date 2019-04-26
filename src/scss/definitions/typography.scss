@@ -4,8 +4,12 @@ body {
   font-family: $base-font;
   font-weight: $font-weight-plain;
   color: $base-foreground;
-  font-size: $font-size-base;
-  line-height: 1.5
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  font-kerning: auto;
+  hyphens: auto;
+  word-wrap: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,47 +21,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: $font-size-h1;
+  font-size: 320%;
 }
 
 h2, .h2 {
-  font-size: $font-size-h2;
+  font-size: 240%;
 }
 
 h3, .h3 {
-  font-size: $font-size-h3;
+  font-size: 200%;
 }
 
 h4, .h4 {
-  font-size: $font-size-h4;
+  font-size: 160%;
 }
 
 h5, .h5 {
-  font-size: $font-size-h5;
+  font-size: 140%;
 }
 
 h6, .h6 {
-  font-size: $font-size-h6;
-}
-
-.text-tiny {
-  font-size: $font-size-tiny;
+  font-size: 120%;
 }
 
 .text-small {
-  font-size: $font-size-small;
+  font-size: 90%;
+}
+
+.text-tiny {
+  font-size: 80%;
 }
 
 .text-base {
-  font-size: $font-size-base;
+  font-size: 100%;
 }
 
 .text-large {
-  font-size: $font-size-large;
+  font-size: 140%;
 }
 
 .text-huge {
-  font-size: $font-size-huge;
+  font-size: 200%;
 }
 
 .text-light {
@@ -97,13 +101,13 @@ h6, .h6 {
 }
 
 small {
-  font-size: $font-size-small;
+  font-size: 90%;
 }
 
 code {
   color: $dark;
   font-family: $code-font;
-  font-size: $font-size-small;
+  font-size: 90%;
   background-color: $light-background;
   padding: 0.2em 0.4em;
 }

@@ -28,22 +28,21 @@
   flex-wrap: nowrap;
   align-content: space-between;
   text-overflow: ellipsis;
-  vertical-align: middle;
   max-width: 100%;
   padding: 0;
 
   .nav-group {
-    display: inline-block;
     margin: 0;
     padding: 0;
+    display: flex;
   }
 
   > *, .nav-item {
-    padding: $inset-base;
     display: inline-block;
     flex: 0 0 auto;
     position: relative;
-    vertical-align: middle;
+    margin: 0;
+    padding: $spacing-base $spacing-base;
   }
 
   .pull {
