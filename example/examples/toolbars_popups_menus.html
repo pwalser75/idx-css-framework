@@ -1,3 +1,88 @@
+<h1>Toolbars</h1>
+
+<strong>Dark</strong> and <strong>Light</strong> toolbars are supported, optionally with a border.
+<br>
+Combined with the <strong>popup</strong> functionality, menus (even nested) can be built easily.
+<p>
+
+    <nav class="navbar navbar-dark navbar-border">
+        <b>Navbar Dark</b>
+        <a class="nav-item" href="#">Link1</a>
+        <div class="nav-group">
+            <a class="nav-item" href="#">Link2</a>
+            <a class="nav-item" href="#">Link3</a>
+        </div>
+        <a href="#" class="nav-item popup popup-menu-right">
+            Menu Left <i class="fa fa-caret-down"></i>
+            <ul class="list">
+                <li>First</li>
+                <li>Second</li>
+                <li class="popup">Third <i class="fa fa-caret-right"></i>
+                    <ul class="list">
+                        <li>Fourth</li>
+                    </ul>
+                </li>
+            </ul>
+        </a>
+        <span class="pull"></span>
+        <a href="#" class="nav-item popup popup-menu-left">Menu Right <i class="fa fa-caret-down"></i>
+            <ul class="list">
+                <li>First</li>
+                <li>Second</li>
+                <li class="popup"><i class="fa fa-caret-left"></i> Third
+                    <ul class="list">
+                        <li>Fourth</li>
+                    </ul>
+                </li>
+            </ul>
+        </a>
+    </nav>
+<p>
+    <nav class="navbar navbar-light navbar-border">
+        <b>Navbar Light</b>
+        <a class="nav-item" href="#">Link1</a>
+        <div class="nav-group">
+            <a class="nav-item" href="#">Link2</a>
+            <a class="nav-item" href="#">Link3</a>
+        </div>
+        <a href="#" class="nav-item popup popup-menu-right">
+            Menu Left <i class="fa fa-caret-down"></i>
+            <ul class="list">
+                <li>First</li>
+                <li>Second</li>
+                <li class="popup">Third <i class="fa fa-caret-right"></i>
+                    <ul class="list">
+                        <li>Fourth</li>
+                    </ul>
+                </li>
+            </ul>
+        </a>
+        <span class="pull"></span>
+        <a href="#" class="nav-item popup popup-menu-left">Menu Right <i class="fa fa-caret-down"></i>
+            <ul class="list">
+                <li>First</li>
+                <li>Second</li>
+                <li class="popup"><i class="fa fa-caret-left"></i> Third
+                    <ul class="list">
+                        <li>Fourth</li>
+                    </ul>
+                </li>
+            </ul>
+        </a>
+    </nav>
+
+<h4>Compact versions:</h4>
+<nav class="navbar navbar-dark navbar-border navbar-small">
+    <b>Navbar Dark</b>
+    <a class="nav-item" href="#">Link1</a>
+</nav>
+<p>
+    <nav class="navbar navbar-light navbar-border navbar-small">
+        <b>Navbar Light</b>
+        <a class="nav-item" href="#">Link1</a>
+    </nav>
+
+
 <h1>Popups</h1>
 
 Popup content can be attached to any element by adding the class <code>popup</code>.
@@ -115,87 +200,3 @@ Additional classes define, where the popup should be opened relative to the anch
         </ul>
     </div>
 </div>
-
-<h1>Toolbars</h1>
-
-<strong>Dark</strong> and <strong>Light</strong> toolbars are supported, optionally with a border.
-<br>
-Combined with the <strong>popup</strong> functionality, menus (even nested) can be built easily.
-<p>
-
-    <nav class="navbar navbar-dark navbar-border">
-        <b>Navbar Dark</b>
-        <a class="nav-item" href="#">Link1</a>
-        <div class="nav-group">
-            <a class="nav-item" href="#">Link2</a>
-            <a class="nav-item" href="#">Link3</a>
-        </div>
-        <a href="#" class="nav-item popup popup-menu-right">
-            Menu Left <i class="fa fa-caret-down"></i>
-            <ul class="list">
-                <li>First</li>
-                <li>Second</li>
-                <li class="popup">Third <i class="fa fa-caret-right"></i>
-                    <ul class="list">
-                        <li>Fourth</li>
-                    </ul>
-                </li>
-            </ul>
-        </a>
-        <span class="pull"></span>
-        <a href="#" class="nav-item popup popup-menu-left">Menu Right <i class="fa fa-caret-down"></i>
-            <ul class="list">
-                <li>First</li>
-                <li>Second</li>
-                <li class="popup"><i class="fa fa-caret-left"></i> Third
-                    <ul class="list">
-                        <li>Fourth</li>
-                    </ul>
-                </li>
-            </ul>
-        </a>
-    </nav>
-<p>
-    <nav class="navbar navbar-light navbar-border">
-        <b>Navbar Light</b>
-        <a class="nav-item" href="#">Link1</a>
-        <div class="nav-group">
-            <a class="nav-item" href="#">Link2</a>
-            <a class="nav-item" href="#">Link3</a>
-        </div>
-        <a href="#" class="nav-item popup popup-menu-right">
-            Menu Left <i class="fa fa-caret-down"></i>
-            <ul class="list">
-                <li>First</li>
-                <li>Second</li>
-                <li class="popup">Third <i class="fa fa-caret-right"></i>
-                    <ul class="list">
-                        <li>Fourth</li>
-                    </ul>
-                </li>
-            </ul>
-        </a>
-        <span class="pull"></span>
-        <a href="#" class="nav-item popup popup-menu-left">Menu Right <i class="fa fa-caret-down"></i>
-            <ul class="list">
-                <li>First</li>
-                <li>Second</li>
-                <li class="popup"><i class="fa fa-caret-left"></i> Third
-                    <ul class="list">
-                        <li>Fourth</li>
-                    </ul>
-                </li>
-            </ul>
-        </a>
-    </nav>
-
-<h4>Compact versions:</h4>
-<nav class="navbar navbar-dark navbar-border navbar-small">
-    <b>Navbar Dark</b>
-    <a class="nav-item" href="#">Link1</a>
-</nav>
-<p>
-    <nav class="navbar navbar-light navbar-border navbar-small">
-        <b>Navbar Light</b>
-        <a class="nav-item" href="#">Link1</a>
-    </nav>
