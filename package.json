@@ -11,8 +11,8 @@
   "scripts": {
     "start": "parallelshell \"npm run watch-sass\" \"npm run serve\"",
     "build": "npm run build-sass",
-    "serve": "live-server --port=4000 --watch=build,example --open=example/index.html",
-    "build-sass": "node-sass --output-style compressed src/scss/idx-style.scss build/idx-style-min.css",
+    "serve": "live-server --port=4000 --watch=demo --open=demo/index.html",
+    "build-sass": "node-sass --output-style compressed src/scss/idx-style.scss demo/build/idx-style-min.css",
     "watch-sass": "npm run build-sass && npm run build-sass -- -w"
   },
   "devDependencies": {

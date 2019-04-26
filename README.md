@@ -30,7 +30,7 @@ Build and run local server (accessible on [http://localhost:4000](http://localho
 ```
 npm run start
 ```
-Build only (target folder: `./build`):
+Build only (target folder: `./demo/build`, artefact: `idx-style-min.css`):
 ```
 npm run build
 ```
