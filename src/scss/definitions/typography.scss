@@ -3,9 +3,11 @@
 body {
   font-family: $base-font;
   font-weight: $font-weight-plain;
-  color: $base-foreground;
-  font-size: 100%;
+
+  @include fluid-type ($media-xs, $media-xl, $font-size-min, $font-size-max);
+
   line-height: 1.5;
+  color: $base-foreground;
   text-rendering: optimizeLegibility;
   font-kerning: auto;
   hyphens: auto;
