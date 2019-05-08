@@ -32,8 +32,11 @@ $font-weight-semi-bold: 500;
 $font-weight-bold: 700;
 
 // Fluid font size mixin
-$font-size-min: 11px; // font size at $media-xs
+$font-size-min: 12px; // font size at $media-xs
 $font-size-max: 16px; // font size at $media-xl
+
+// Header font scale factor
+$header-font-size-scale: 1.25; // 1.25 = major third
 
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);

@@ -23,35 +23,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 320%;
+  font-size: 100% * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale;
 }
 
 h2, .h2 {
-  font-size: 240%;
+  font-size: 100% * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale;
 }
 
 h3, .h3 {
-  font-size: 200%;
+  font-size: 100% * $header-font-size-scale * $header-font-size-scale * $header-font-size-scale;
 }
 
 h4, .h4 {
-  font-size: 160%;
+  font-size: 100% * $header-font-size-scale * $header-font-size-scale;
 }
 
 h5, .h5 {
-  font-size: 140%;
+  font-size: 100% * $header-font-size-scale;
 }
 
 h6, .h6 {
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .text-small {
-  font-size: 90%;
+  font-size: 100% / $header-font-size-scale;
 }
 
 .text-tiny {
-  font-size: 80%;
+  font-size: 100% / $header-font-size-scale / $header-font-size-scale;
 }
 
 .text-base {
