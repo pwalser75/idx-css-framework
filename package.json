@@ -22,7 +22,7 @@
     "parallelshell": "^3.0.2"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "npm": "^6.9.0"
   }
 }
